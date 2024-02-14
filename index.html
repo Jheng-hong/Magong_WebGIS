@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>馬公遊廓WebGIS平台</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <style>
+        /* 確保地圖容器是相對定位的 */
+        #map {
+            width: 1520px;
+            height: 720px;
+            position: relative; /* 添加此行 */
+        }
+
+        /* 提高圖層選擇區塊的z-index，並確保其相對於地圖容器絕對定位 */
+        .layer-select {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 1000; /* 添加此行來提高層級 */
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+        <div class="layer-select">
+            <form id="layer-form">
+                <input type="checkbox" id="layer1" name="layer" value="Layer1"><label for="layer1">媽宮街町界</label><br>
+                <input type="checkbox" id="layer2" name="layer" value="Layer2"><label for="layer2">臺灣堡圖</label><br>
+                <input type="checkbox" id="layer3" name="layer" value="Layer3"><label for="layer3">160磅地籍藍曬圖</label><br>
+            </form>
+        </div>
+    </div>
+    <script>
+        // 初始化地圖
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([119.565, 23.565]),
+                zoom: 16
+            })
+        });
+
+        // 圖層對象，根據需要配置
+        var layers = {
+            'Layer1': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'MagongOldTownBoundary.geojson',
+                    format: new ol.format.GeoJSON()
+                })
+            }),
+            'Layer2': new ol.layer.Tile({           //Google Maps
+				visible:false,
+                source: new ol.source.XYZ({
+					crossOrigin: 'anonymous',
+					url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
+                })
+            }),
+            'Layer3': new ol.layer.Tile({
+                source: new ol.source.XYZ({
+                    url: '你的Layer3圖資URL'
+                })
+            })
+        };
+
+        // 監聽checkbox的變化，更新地圖圖層
+        document.getElementById('layer-form').addEventListener('change', function(e) {
+			var checkedLayers = document.querySelectorAll('#layer-form input[type="checkbox"]:checked');
+			map.getLayers().clear(); // 清除现有图层
+			map.addLayer(new ol.layer.Tile({ // 重新添加基础图层
+				source: new ol.source.OSM()
+			}));
+			checkedLayers.forEach(function(layer) {
+				var layerToAdd = layers[layer.value];
+				layerToAdd.setVisible(true); // 确保添加的图层是可见的
+				map.addLayer(layerToAdd); // 根据选择添加图层
+			});
+		});
+    </script>
+</body>
+</html>

@@ -30,9 +30,9 @@
         <form id="layer-form">
             <label for="layer1">媽宮街町界: <input type="checkbox" id="layer1" name="layer" value="Layer1"></label>
             <input type="range" class="slider" id="sliderLayer1" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer2">臺灣堡圖: <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
+            <label for="layer2">1904年臺灣堡圖: <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
             <input type="range" class="slider" id="sliderLayer2" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer3">160磅地籍藍曬圖: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
+            <label for="layer3">1945美軍繪製臺灣城市地圖: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
             <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
             <label for="layer4">Google地圖: <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
             <input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
@@ -101,7 +101,7 @@
             }),
             'Layer3': new ol.layer.Tile({
                 source: new ol.source.XYZ({
-                    url: '你的Layer3圖資URL'
+                    url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=AMCityPlan_1945-jpg-{z}-{x}-{y}'
                 }),
                 opacity: 1,
 				zIndex: 2

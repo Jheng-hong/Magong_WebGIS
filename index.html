@@ -67,15 +67,29 @@
                 }),
                 opacity: 1,
 				// 定義圖層的樣式
-				style: new ol.style.Style({
-					stroke: new ol.style.Stroke({
-						color: 'red', // 線條顏色
-						width: 2 // 線條寬度
-					}),
-					fill: new ol.style.Fill({
-						color: 'rgba(0,0,0,0)' // 填充色設為完全透明
-					})
-				}),
+				style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'red', // 線條顏色
+                            width: 2 // 線條寬度
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' // 填充色設為完全透明
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: '#000' // 文本顏色
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', // 文本邊框顏色
+                                width: 3 // 文本邊框寬度
+                            }),
+                            // 從要素屬性中獲取町名來顯示
+                            text: feature.get('町名')
+                        })
+                    });
+                },
 				zIndex: 4
             }),
             'Layer2': new ol.layer.Tile({

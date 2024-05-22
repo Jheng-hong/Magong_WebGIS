@@ -1,0 +1,159 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "宮崎_佐賀",
+                "owner": "宮崎辰市",
+                "route": 1,
+                "time": "1914/09/01"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.570100593263,
+                        23.5688573159648
+                    ],
+                    [
+                        121.569976878036,
+                        23.5689160607238
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "route": 1,
+                "time": "1931/12/02"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.56369558575,
+                        23.5640463325886
+                    ],
+                    [
+                        121.563653441977,
+                        23.5636721802266
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "route": 2,
+                "time": "1939/03/05"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.563653441977,
+                        23.5636721802266
+                    ],
+                    [
+                        121.565078497308,
+                        23.5642150983727
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "route": 3,
+                "time": "1945/02/26"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.565078497308,
+                        23.5642150983727
+                    ],
+                    [
+                        121.565260012431,
+                        23.5659208208987
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "邵_顏",
+                "owner": "邵水",
+                "route": 1,
+                "time": "1920/07/09"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.564158967646,
+                        23.5645762768797
+                    ],
+                    [
+                        121.564177064122,
+                        23.5651654722756
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "邵_顏",
+                "owner": "邵水",
+                "route": 2,
+                "time": "1920/10/01"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.564177064122,
+                        23.5651654722756
+                    ],
+                    [
+                        121.564177064122,
+                        23.5651654722756
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "family_system": "邵_顏",
+                "owner": "邵水",
+                "route": 3,
+                "time": "1922/03/28"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.564177064122,
+                        23.5651654722756
+                    ],
+                    [
+                        121.565096042778,
+                        23.5649665883362
+                    ]
+                ]
+            }
+        }
+    ]
+}

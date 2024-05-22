@@ -22,23 +22,41 @@
         .slider {
             width: 100%;
         }
+        .top-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
     <div class="layer-select">
+        <div class="top-bar">
+            <select id="family-select">
+                <option value="" disabled selected>家族系統</option>
+                <option value="family1">系統1</option>
+                <option value="family2">系統2</option>
+            </select>
+            <select id="member-select">
+                <option value="" disabled selected>系統戶主</option>
+                <option value="member1">戶主1</option>
+                <option value="member2">戶主2</option>
+            </select>
+            <button id="display-button">展示</button>
+        </div>
         <form id="layer-form">
             <label for="layer1">1906年遊廓範圍: <input type="checkbox" id="layer1" name="layer" value="Layer1"></label>
             <input type="range" class="slider" id="sliderLayer1" min="0" max="1" step="0.1" value="1"><br>
             <label for="layer2">1913年遊廓範圍: <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
             <input type="range" class="slider" id="sliderLayer2" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer1">媽宮街町界: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
+            <label for="layer3">媽宮街町界: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
             <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer2">1904年臺灣堡圖: <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
+            <label for="layer4">1904年臺灣堡圖: <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
             <input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer3">1945美軍繪製臺灣城市地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
+            <label for="layer5">1945美軍繪製臺灣城市地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
             <input type="range" class="slider" id="sliderLayer5" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer4">Google地圖: <input type="checkbox" id="layer6" name="layer" value="Layer6"></label>
+            <label for="layer6">Google地圖: <input type="checkbox" id="layer6" name="layer" value="Layer6"></label>
             <input type="range" class="slider" id="sliderLayer6" min="0" max="1" step="0.1" value="1"><br>
         </form>
     </div>
@@ -55,8 +73,8 @@
                 zoom: 16
             })
         });
-		
-		var baseLayer = new ol.layer.Tile({
+        
+        var baseLayer = new ol.layer.Tile({
             source: new ol.source.OSM(),
             // 將基礎圖層設置為最底層，確保其他圖層疊加在上面
             zIndex: 0
@@ -70,8 +88,8 @@
                     format: new ol.format.GeoJSON()
                 }),
                 opacity: 1,
-				// 定義圖層的樣式
-				style: function(feature) {
+                // 定義圖層的樣式
+                style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
                             color: 'rgba(255,105,180,1)', // 線條顏色
@@ -82,7 +100,7 @@
                         }),
                     });
                 },
-				zIndex: 6
+                zIndex: 6
             }),
             'Layer2': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -90,8 +108,8 @@
                     format: new ol.format.GeoJSON()
                 }),
                 opacity: 1,
-				// 定義圖層的樣式
-				style: function(feature) {
+                // 定義圖層的樣式
+                style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
                             color: 'rgba(160,32,240,1)', // 線條顏色
@@ -102,7 +120,7 @@
                         }),
                     });
                 },
-				zIndex: 5
+                zIndex: 5
             }),
             'Layer3': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -110,8 +128,8 @@
                     format: new ol.format.GeoJSON()
                 }),
                 opacity: 1,
-				// 定義圖層的樣式
-				style: function(feature) {
+                // 定義圖層的樣式
+                style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
                             color: 'red', // 線條顏色
@@ -134,28 +152,28 @@
                         })
                     });
                 },
-				zIndex: 4
+                zIndex: 4
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
                 }),
                 opacity: 1,
-				zIndex: 3
+                zIndex: 3
             }),
             'Layer5': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=AMCityPlan_1945-jpg-{z}-{x}-{y}'
                 }),
                 opacity: 1,
-				zIndex: 2
+                zIndex: 2
             }),
             'Layer6': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://mt{0-3}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
                 }),
                 opacity: 1,
-				zIndex: 1
+                zIndex: 1
             }),
         };
 
@@ -174,12 +192,23 @@
         });
 
         document.querySelectorAll('.slider').forEach(function(slider) {
-            slider.addEventListener('input', function() {
+            slider.addeventListener('input', function() {
                 var layerId = slider.id.replace('slider', '');
                 var layer = layers[layerId];
                 layer.setOpacity(parseFloat(slider.value));
             });
         });
+
+        document.getElementById('display-button').addEventListener('click', function() {
+            var family = document.getElementById('family-select').value;
+            var member = document.getElementById('member-select').value;
+            if (family && member) {
+                alert('展示 ' + family + ' 的 ' + member);
+            } else {
+                alert('請選擇家族和家族成員');
+            }
+        });
     </script>
 </body>
 </html>
+

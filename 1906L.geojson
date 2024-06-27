@@ -3,6 +3,6 @@
 "name": "1906L",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "Id": 15, "貸座敷": "瓢亭", "type": "料理屋" }, "geometry": { "type": "Point", "coordinates": [ 119.565062597986824, 23.564322229323533 ] } }
+{ "type": "Feature", "properties": { "Id": 15, "料理屋": "瓢亭", "type": "料理屋" }, "geometry": { "type": "Point", "coordinates": [ 119.565062597986824, 23.564322229323533 ] } }
 ]
 }

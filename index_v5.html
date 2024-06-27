@@ -101,30 +101,179 @@
         });
         map.addLayer(baseLayer);
 
+        var layers = {
+            'Layer1': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906YukakuArea.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255,105,180,1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255,105,180,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1906)'
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Layer2': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1913YukakuArea.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(160,32,240,1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(160,32,240,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1913)'
+                        })
+                    });
+                },
+                zIndex: 4
+            }),
+            'Layer3': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/MagongOldTownBoundary.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'red', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'red' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('町名')
+                        })
+                    });
+                },
+                zIndex: 3
+            }),
+            'Layer4': new ol.layer.Tile({
+                source: new ol.source.XYZ({
+                    url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
+                }),
+                opacity: 1,
+                zIndex: 2
+            }),
+            'Layer5': new ol.layer.Tile({
+                source: new ol.source.XYZ({
+                    url: 'https://mt{0-3}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+                }),
+                opacity: 1,
+                zIndex: 1
+            }),
+        };
+
+        Object.keys(layers).forEach(function(key) {
+            layers[key].setVisible(false);
+            map.addLayer(layers[key]);
+        });
+
+        document.getElementById('layer-form').addEventListener('change', function(e) {
+            var layer = layers[e.target.value];
+            if (e.target.checked) {
+                layer.setVisible(true);
+            } else {
+                layer.setVisible(false);
+            }
+        });
+
         var pointLayers = {
             'Item1': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906D.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    image: new ol.style.Circle({
-                        radius: 5,
-                        fill: new ol.style.Fill({ color: 'blue' })
-                    })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/lips.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'black' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('貸座敷'),
+                            offsetX: 10, // 向右偏移
+                            offsetY: -10 // 向上偏移
+                        })
+                    });
+                }
             }),
             'Item2': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906L.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    image: new ol.style.Circle({
-                        radius: 5,
-                        fill: new ol.style.Fill({ color: 'green' })
-                    })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/liquor.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'black' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('料理屋'),
+                            offsetX: 10, // 向右偏移
+                            offsetY: -10 // 向上偏移
+                        })
+                    });
+                }
             }),
             'Item8': new ol.layer.Vector({
                 source: new ol.source.Vector({

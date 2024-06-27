@@ -209,6 +209,21 @@
             }),
         };
 
+        var item1Layer = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906L.geojson', 
+                format: new ol.format.GeoJSON()
+            }),
+            style: new ol.style.Style({
+                image: new ol.style.Icon({
+                    src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/lips.png', // 替換為實際的圖標URL
+                    scale: 0.05
+                })
+            })
+        });
+        map.addLayer(item1Layer);
+        item1Layer.setVisible(false);
+
         Object.keys(layers).forEach(function(key) {
             layers[key].setVisible(false);
             map.addLayer(layers[key]);
@@ -229,6 +244,10 @@
                 var layer = layers[layerId];
                 layer.setOpacity(parseFloat(slider.value));
             });
+        });
+
+        document.getElementById('item1').addEventListener('change', function(e) {
+            item1Layer.setVisible(e.target.checked);
         });
 
         // 加載 JSON 數據並設置選項

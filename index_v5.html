@@ -55,7 +55,7 @@
             <label for="item5"><input type="checkbox" id="item5" name="layer" value="Item5">料理屋(1927)</label>
             <label for="item6"><input type="checkbox" id="item6" name="layer" value="Item6">料理屋(1937)</label>
             <label for="item7"><input type="checkbox" id="item7" name="layer" value="Item7">婦人病院</label>
-            <label for="item8"><input type="checkbox" id="item8" name="layer" value="Item8">警察官吏派出所</label>
+            <label for="item8"><input type="checkbox" id="item8" name="layer" value="Item8">警察官吏派出所(1907)</label>
         </div>
         <h4>家族遷移路線</h4>
         <div class="top-bar">
@@ -277,15 +277,29 @@
             }),
             'Item8': new ol.layer.Vector({
                 source: new ol.source.Vector({
-                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906D.geojson',
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1907P.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    image: new ol.style.Circle({
-                        radius: 5,
-                        fill: new ol.style.Fill({ color: 'red' })
-                    })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/police.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'black' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('料理屋'),
+                            offsetX: 10, // 向右偏移
+                            offsetY: -10 // 向上偏移
+                        })
+                    });
+                }
             })
         };
 

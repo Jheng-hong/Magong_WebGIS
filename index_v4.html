@@ -105,33 +105,36 @@
         var layers = {
             'Item1': new ol.layer.Vector({
                 source: new ol.source.Vector({
-                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906YukakuArea.geojson',
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906D.geojson',
                     format: new ol.format.GeoJSON()
                 }),
                 opacity: 1,
                 style: function(feature) {
                     return new ol.style.Style({
-                        stroke: new ol.style.Stroke({
-                            color: 'rgba(255,105,180,1)', 
-                            width: 2 
-                        }),
-                        fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,0)' 
+                        image: new ol.style.Circle({
+                            radius: 5,
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255,105,180,1)'
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: 'rgba(255,105,180,1)',
+                                width: 1
+                            })
                         }),
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
                             fill: new ol.style.Fill({
-                                color: 'rgba(255,105,180,1)' 
+                                color: 'rgba(255,105,180,1)'
                             }),
                             stroke: new ol.style.Stroke({
-                                color: '#fff', 
-                                width: 3 
+                                color: '#fff',
+                                width: 3
                             }),
-                            text: '遊廓(1906)'
+                            text: feature.get('貸座敷')
                         })
                     });
                 },
-                zIndex: 5
+                zIndex: 6
             }),
             'Layer1': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -357,7 +360,7 @@
                                         new ol.style.Style({
                                             geometry: new ol.geom.Point(end),
                                             image: new ol.style.Icon({
-                                                src: 'https://openlayers.org/en/v4.6.5/examples/data/arrow.png', // 使用箭頭圖標
+                                                src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/navigation.png', // 使用箭頭圖標 https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/navigation.png https://openlayers.org/en/v4.6.5/examples/data/arrow.png
                                                 anchor: [0.5, 0.5],
                                                 rotateWithView: true,
                                                 rotation: angle-(45/ Math.PI)

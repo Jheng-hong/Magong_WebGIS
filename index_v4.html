@@ -27,11 +27,37 @@
             gap: 10px;
             margin-bottom: 10px;
         }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group label input {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
+    
     <div class="layer-select">
+        <h4>相關圖徵</h4>
+        <div class="checkbox-group">
+            <label for="item1"><input type="checkbox" id="item1" name="layer" value="Item1">貸座敷(1906)</label>
+            <label for="item2"><input type="checkbox" id="item2" name="layer" value="Item2">貸座敷(1927)</label>
+            <label for="item3"><input type="checkbox" id="item3" name="layer" value="Item3">貸座敷(1937)</label>
+            <label for="item4"><input type="checkbox" id="item4" name="layer" value="Item4">料理屋(1906)</label>
+            <label for="item5"><input type="checkbox" id="item5" name="layer" value="Item5">料理屋(1927)</label>
+            <label for="item6"><input type="checkbox" id="item6" name="layer" value="Item6">料理屋(1937)</label>
+            <label for="item7"><input type="checkbox" id="item7" name="layer" value="Item7">婦人病院</label>
+            <label for="item8"><input type="checkbox" id="item8" name="layer" value="Item8">警察官吏派出所</label>
+        </div>
+        <h4>家族遷移路線</h4>
         <div class="top-bar">
             <select id="family-select">
                 <option value="" disabled selected>家族系統</option>
@@ -41,19 +67,19 @@
             </select>
             <button id="display-button">展示</button>
         </div>
+        <h4>圖層套疊</h4>
         <form id="layer-form">
-            <label for="layer1">1906年遊廓範圍: <input type="checkbox" id="layer1" name="layer" value="Layer1"></label>
+            <label for="layer1">遊廓區域(1906): <input type="checkbox" id="layer1" name="layer" value="Layer1"></label>
             <input type="range" class="slider" id="sliderLayer1" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer2">1913年遊廓範圍: <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
+            <label for="layer2">遊廓區域(1913): <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
             <input type="range" class="slider" id="sliderLayer2" min="0" max="1" step="0.1" value="1"><br>
             <label for="layer3">媽宮街町界: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
             <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer4">1904年臺灣堡圖: <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
+            <label for="layer4">臺灣堡圖(1904): <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
             <input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer5">1945美軍繪製臺灣城市地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
+            <label for="layer5">Google地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
             <input type="range" class="slider" id="sliderLayer5" min="0" max="1" step="0.1" value="1"><br>
-            <label for="layer6">Google地圖: <input type="checkbox" id="layer6" name="layer" value="Layer6"></label>
-            <input type="range" class="slider" id="sliderLayer6" min="0" max="1" step="0.1" value="1"><br>
+            
         </form>
     </div>
     <script>
@@ -77,6 +103,36 @@
         map.addLayer(baseLayer);
 
         var layers = {
+            'Item1': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906YukakuArea.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255,105,180,1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255,105,180,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1906)'
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
             'Layer1': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906YukakuArea.geojson',
@@ -90,11 +146,22 @@
                             width: 2 
                         }),
                         fill: new ol.style.Fill({
-                            color: 'rgba(255,105,180,1)' 
+                            color: 'rgba(0,0,0,0)' 
                         }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255,105,180,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1906)'
+                        })
                     });
                 },
-                zIndex: 6
+                zIndex: 5
             }),
             'Layer2': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -109,11 +176,22 @@
                             width: 2 
                         }),
                         fill: new ol.style.Fill({
-                            color: 'rgba(160,32,240,1)' 
+                            color: 'rgba(0,0,0,0)' 
                         }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(160,32,240,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1913)'
+                        })
                     });
                 },
-                zIndex: 5
+                zIndex: 4
             }),
             'Layer3': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -143,23 +221,16 @@
                         })
                     });
                 },
-                zIndex: 4
+                zIndex: 3
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
                 }),
                 opacity: 1,
-                zIndex: 3
-            }),
-            'Layer5': new ol.layer.Tile({
-                source: new ol.source.XYZ({
-                    url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=AMCityPlan_1945-jpg-{z}-{x}-{y}'
-                }),
-                opacity: 1,
                 zIndex: 2
             }),
-            'Layer6': new ol.layer.Tile({
+            'Layer5': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://mt{0-3}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
                 }),

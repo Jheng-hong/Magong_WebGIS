@@ -111,8 +111,9 @@
                 style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: 'rgba(255,105,180,1)', 
-                            width: 2 
+                            color: 'rgba(255, 105, 180, 1)', 
+                            width: 2,
+                            lineDash: [4, 8] // 定義虛線的模式
                         }),
                         fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,0)' 
@@ -120,7 +121,7 @@
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
                             fill: new ol.style.Fill({
-                                color: 'rgba(255,105,180,1)' 
+                                color: 'rgba(255, 105, 180,1)' 
                             }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
@@ -130,7 +131,7 @@
                         })
                     });
                 },
-                zIndex: 5
+                zIndex: 4
             }),
             'Layer2': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -141,8 +142,9 @@
                 style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: 'rgba(160,32,240,1)', 
-                            width: 2 
+                            color: 'rgba(199, 21, 133, 1)', 
+                            width: 2,
+                            lineDash: [4, 8] // 定義虛線的模式
                         }),
                         fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,0)' 
@@ -150,7 +152,7 @@
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
                             fill: new ol.style.Fill({
-                                color: 'rgba(160,32,240,1)' 
+                                color: 'rgba(199, 21, 133, 1)' 
                             }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
@@ -160,7 +162,7 @@
                         })
                     });
                 },
-                zIndex: 4
+                zIndex: 5
             }),
             'Layer3': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -171,8 +173,9 @@
                 style: function(feature) {
                     return new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: 'red', 
-                            width: 2 
+                            color: 'rgba(105, 105, 105, 1)', 
+                            width: 3,
+                            lineDash: [4, 8] // 定義虛線的模式
                         }),
                         fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,0)' 
@@ -180,7 +183,7 @@
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
                             fill: new ol.style.Fill({
-                                color: 'red' 
+                                color: 'rgba(105, 105, 105, 1)'
                             }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
@@ -190,7 +193,7 @@
                         })
                     });
                 },
-                zIndex: 3
+                zIndex: 2
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
@@ -247,7 +250,8 @@
                             offsetY: -15 // 向上偏移
                         })
                     });
-                }
+                },
+                zIndex: 6
             }),
             'Item4': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -273,7 +277,8 @@
                             offsetY: -15 // 向上偏移
                         })
                     });
-                }
+                },
+                zIndex: 6
             }),
             'Item8': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -299,7 +304,8 @@
                             offsetY: -15 // 向上偏移
                         })
                     });
-                }
+                },
+                zIndex: 6
             })
         };
 
@@ -309,50 +315,145 @@
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1927D.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'blue', width: 2 }),
-                    fill: new ol.style.Fill({ color: 'rgba(0, 0, 255, 0.1)' })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 105, 180, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 105, 180, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 105, 180, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('名稱')
+                        })
+                    });
+                },
+                zIndex: 5
             }),
             'Item3': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1937D.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'green', width: 2 }),
-                    fill: new ol.style.Fill({ color: 'rgba(0, 255, 0, 0.1)' })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 20, 147, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 20, 147, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 20, 147, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('Name')
+                        })
+                    });
+                },
+                zIndex: 5
             }),
             'Item5': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1927L.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'red', width: 2 }),
-                    fill: new ol.style.Fill({ color: 'rgba(255, 0, 0, 0.1)' })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(32, 178, 170, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(32, 178, 170, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(32, 178, 170, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('名稱')
+                        })
+                    });
+                },
+                zIndex: 5
             }),
             'Item6': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1937L.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'purple', width: 2 }),
-                    fill: new ol.style.Fill({ color: 'rgba(128, 0, 128, 0.1)' })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(0, 139, 139, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0, 139, 139, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(0, 139, 139, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('Name')
+                        })
+                    });
+                },
+                zIndex: 5
             }),
             'Item7': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/womanH.geojson',
                     format: new ol.format.GeoJSON()
                 }),
-                style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'orange', width: 2 }),
-                    fill: new ol.style.Fill({ color: 'rgba(255, 165, 0, 0.1)' })
-                })
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 215, 0, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 215, 0, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 215, 0, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('地點')
+                        })
+                    });
+                },
+                zIndex: 5
             })
         };
 

@@ -237,19 +237,19 @@
                         }),
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
-                            fill: new ol.style.Fill({ color: 'black' }),
+                            fill: new ol.style.Fill({ color: 'rgba(255, 20, 147, 1)' }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
                                 width: 3 
                             }),
                             text: feature.get('貸座敷'),
-                            offsetX: 10, // 向右偏移
-                            offsetY: -10 // 向上偏移
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
                         })
                     });
                 }
             }),
-            'Item2': new ol.layer.Vector({
+            'Item4': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906L.geojson',
                     format: new ol.format.GeoJSON()
@@ -263,14 +263,14 @@
                         }),
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
-                            fill: new ol.style.Fill({ color: 'black' }),
+                            fill: new ol.style.Fill({ color: 'rgba(0, 139, 139, 1)' }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
                                 width: 3 
                             }),
                             text: feature.get('料理屋'),
-                            offsetX: 10, // 向右偏移
-                            offsetY: -10 // 向上偏移
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
                         })
                     });
                 }
@@ -289,14 +289,14 @@
                         }),
                         text: new ol.style.Text({
                             font: '12px Calibri,sans-serif',
-                            fill: new ol.style.Fill({ color: 'black' }),
+                            fill: new ol.style.Fill({ color: 'rgba(47, 79, 79, 1)' }),
                             stroke: new ol.style.Stroke({
                                 color: '#fff', 
                                 width: 3 
                             }),
-                            text: feature.get('料理屋'),
-                            offsetX: 10, // 向右偏移
-                            offsetY: -10 // 向上偏移
+                            text: feature.get('Name'),
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
                         })
                     });
                 }
@@ -304,7 +304,7 @@
         };
 
         var polygonLayers = {
-            'Item3': new ol.layer.Vector({
+            'Item2': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1927D.geojson',
                     format: new ol.format.GeoJSON()
@@ -314,7 +314,7 @@
                     fill: new ol.style.Fill({ color: 'rgba(0, 0, 255, 0.1)' })
                 })
             }),
-            'Item4': new ol.layer.Vector({
+            'Item3': new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1937D.geojson',
                     format: new ol.format.GeoJSON()

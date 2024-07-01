@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬公遊廓WebGIS平台</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .layer-select {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        .top-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group label input {
+            margin-right: 5px;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .layer-select {
+                max-width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .top-bar {
+                flex-direction: column;
+            }
+
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="layer-select" id="layer-select">
+        <button class="toggle-button" id="toggle-button">-</button>
+        <div id="layer-content">
+            <h4>相關圖徵</h4>
+            <div class="checkbox-group">
+                <label for="item1"><input type="checkbox" id="item1" name="layer" value="Item1">貸座敷(1906)</label>
+                <label for="item2"><input type="checkbox" id="item2" name="layer" value="Item2">貸座敷(1927)</label>
+                <label for="item3"><input type="checkbox" id="item3" name="layer" value="Item3">貸座敷(1937)</label>
+                <label for="item4"><input type="checkbox" id="item4" name="layer" value="Item4">料理屋(1906)</label>
+                <label for="item5"><input type="checkbox" id="item5" name="layer" value="Item5">料理屋(1927)</label>
+                <label for="item6"><input type="checkbox" id="item6" name="layer" value="Item6">料理屋(1937)</label>
+                <label for="item7"><input type="checkbox" id="item7" name="layer" value="Item7">婦人病院</label>
+                <label for="item8"><input type="checkbox" id="item8" name="layer" value="Item8">警察官吏派出所(1907)</label>
+            </div>
+            <h4>家族遷移路線</h4>
+            <div class="top-bar">
+                <select id="family-select">
+                    <option value="" disabled selected>家族系統</option>
+                </select>
+                <select id="member-select">
+                    <option value="" disabled selected>系統戶主</option>
+                </select>
+                <button id="display-button">展示</button>
+            </div>
+            <h4>圖層套疊</h4>
+            <form id="layer-form">
+                <label for="layer1">遊廓區域(1906): <input type="checkbox" id="layer1" name="layer" value="Layer1"></label>
+                <input type="range" class="slider" id="sliderLayer1" min="0" max="1" step="0.1" value="1"><br>
+                <label for="layer2">遊廓區域(1913): <input type="checkbox" id="layer2" name="layer" value="Layer2"></label>
+                <input type="range" class="slider" id="sliderLayer2" min="0" max="1" step="0.1" value="1"><br>
+                <label for="layer3">媽宮街町界: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
+                <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
+                <label for="layer4">臺灣堡圖(1904): <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
+                <input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
+                <label for="layer5">Google地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
+                <input type="range" class="slider" id="sliderLayer5" min="0" max="1" step="0.1" value="1"><br>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([119.565, 23.565]),
+                zoom: 16
+            })
+        });
+
+        var baseLayer = new ol.layer.Tile({
+            source: new ol.source.OSM(),
+            zIndex: 0
+        });
+        map.addLayer(baseLayer);
+
+        var layers = {
+            'Layer1': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906YukakuArea.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 105, 180, 1)', 
+                            width: 2,
+                            lineDash: [4, 8] // 定義虛線的模式
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 105, 180,1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1906)'
+                        })
+                    });
+                },
+                zIndex: 4
+            }),
+            'Layer2': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1913YukakuArea.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(199, 21, 133, 1)', 
+                            width: 2,
+                            lineDash: [4, 8] // 定義虛線的模式
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(199, 21, 133, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: '遊廓(1913)'
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Layer3': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/MagongOldTownBoundary.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(105, 105, 105, 1)', 
+                            width: 3,
+                            lineDash: [4, 8] // 定義虛線的模式
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(105, 105, 105, 1)'
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('町名')
+                        })
+                    });
+                },
+                zIndex: 2
+            }),
+            'Layer4': new ol.layer.Tile({
+                source: new ol.source.XYZ({
+                    url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
+                }),
+                opacity: 1,
+                zIndex: 2
+            }),
+            'Layer5': new ol.layer.Tile({
+                source: new ol.source.XYZ({
+                    url: 'https://mt{0-3}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+                }),
+                opacity: 1,
+                zIndex: 1
+            }),
+        };
+
+        Object.keys(layers).forEach(function(key) {
+            layers[key].setVisible(false);
+            map.addLayer(layers[key]);
+        });
+
+        document.getElementById('layer-form').addEventListener('change', function(e) {
+            var layer = layers[e.target.value];
+            if (e.target.checked) {
+                layer.setVisible(true);
+            } else {
+                layer.setVisible(false);
+            }
+        });
+
+        var pointLayers = {
+            'Item1': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906D.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/lips.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'rgba(255, 20, 147, 1)' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('貸座敷'),
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
+                        })
+                    });
+                },
+                zIndex: 6
+            }),
+            'Item4': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1906L.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/liquor.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'rgba(0, 139, 139, 1)' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('料理屋'),
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
+                        })
+                    });
+                },
+                zIndex: 6
+            }),
+            'Item8': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1907P.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        image: new ol.style.Icon({
+                            src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/police.png', 
+                            anchor: [0.5, 0.5],
+                            rotateWithView: true
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({ color: 'rgba(47, 79, 79, 1)' }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('Name'),
+                            offsetX: 15, // 向右偏移
+                            offsetY: -15 // 向上偏移
+                        })
+                    });
+                },
+                zIndex: 6
+            })
+        };
+
+        var polygonLayers = {
+            'Item2': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1927D.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 105, 180, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 105, 180, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 105, 180, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('名稱')
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Item3': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1937D.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 20, 147, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 20, 147, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 20, 147, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('Name')
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Item5': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1927L.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(32, 178, 170, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(32, 178, 170, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(32, 178, 170, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('名稱')
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Item6': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/1937L.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(0, 139, 139, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(0, 139, 139, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(0, 139, 139, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('Name')
+                        })
+                    });
+                },
+                zIndex: 5
+            }),
+            'Item7': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/womanH.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 215, 0, 1)', 
+                            width: 2 
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 215, 0, 0.25)' 
+                        }),
+                        text: new ol.style.Text({
+                            font: '12px Calibri,sans-serif',
+                            fill: new ol.style.Fill({
+                                color: 'rgba(255, 215, 0, 1)' 
+                            }),
+                            stroke: new ol.style.Stroke({
+                                color: '#fff', 
+                                width: 3 
+                            }),
+                            text: feature.get('地點')
+                        })
+                    });
+                },
+                zIndex: 5
+            })
+        };
+
+        Object.keys(pointLayers).forEach(function(key) {
+            pointLayers[key].setVisible(false);
+            map.addLayer(pointLayers[key]);
+        });
+
+        Object.keys(polygonLayers).forEach(function(key) {
+            polygonLayers[key].setVisible(false);
+            map.addLayer(polygonLayers[key]);
+        });
+
+        document.querySelector('.checkbox-group').addEventListener('change', function(e) {
+            var layer = pointLayers[e.target.value] || polygonLayers[e.target.value];
+            if (e.target.checked) {
+                layer.setVisible(true);
+            } else {
+                layer.setVisible(false);
+            }
+        });
+
+        document.querySelectorAll('.slider').forEach(function(slider) {
+            slider.addEventListener('input', function() {
+                var layerId = slider.id.replace('slider', '');
+                var layer = layers[layerId];
+                layer.setOpacity(parseFloat(slider.value));
+            });
+        });
+
+        // 加載 JSON 數據並設置選項
+        fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/test.json')
+            .then(response => response.json())
+            .then(data => {
+                var familySelect = document.getElementById('family-select');
+                var memberSelect = document.getElementById('member-select');
+
+                var familySystems = {};
+                data.features.forEach(feature => {
+                    var familySystem = feature.properties.family_system;
+                    var owner = feature.properties.owner;
+                    if (!familySystems[familySystem]) {
+                        familySystems[familySystem] = [];
+                    }
+                    if (!familySystems[familySystem].includes(owner)) {
+                        familySystems[familySystem].push(owner);
+                    }
+                });
+
+                Object.keys(familySystems).forEach(familySystem => {
+                    var option = document.createElement('option');
+                    option.value = familySystem;
+                    option.textContent = familySystem;
+                    familySelect.appendChild(option);
+                });
+
+                familySelect.addEventListener('change', function() {
+                    var selectedFamilySystem = familySelect.value;
+                    memberSelect.innerHTML = '<option value="" disabled selected>系統戶主</option>';
+                    familySystems[selectedFamilySystem].forEach(owner => {
+                        var option = document.createElement('option');
+                        option.value = owner;
+                        option.textContent = owner;
+                        memberSelect.appendChild(option);
+                    });
+                });
+            });
+
+        // 計算兩點之間的角度
+        function getAngle(coordinate1, coordinate2) {
+            var dx = coordinate2[0] - coordinate1[0];
+            var dy = coordinate2[1] - coordinate1[1];
+            const angleRadians = Math.atan2(dx, dy);
+            return angleRadians;
+        }
+
+        // 計算線段中點
+        function getMidpoint(coordinate1, coordinate2) {
+            return [
+                (coordinate1[0] + coordinate2[0]) / 2,
+                (coordinate1[1] + coordinate2[1]) / 2
+            ];
+        }
+
+        // 展示按鈕點擊事件處理
+        document.getElementById('display-button').addEventListener('click', function() {
+            var family = document.getElementById('family-select').value;
+            var member = document.getElementById('member-select').value;
+            if (family && member) {
+                fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/test.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        var features = data.features.filter(feature => 
+                            feature.properties.family_system === family && feature.properties.owner === member
+                        );
+
+                        var vectorSource = new ol.source.Vector({
+                            features: (new ol.format.GeoJSON()).readFeatures({
+                                type: 'FeatureCollection',
+                                features: features
+                            }, {
+                                featureProjection: 'EPSG:3857' // 確保座標投影正確
+                            })
+                        });
+
+                        var vectorLayer = new ol.layer.Vector({
+                            source: vectorSource,
+                            style: function(feature) {
+                                var coordinates = feature.getGeometry().getCoordinates();
+                                var styles = [];
+                                for (var i = 0; i < coordinates.length - 1; i++) {
+                                    var start = coordinates[i];
+                                    var end = coordinates[i + 1];
+                                    var angle = getAngle(start, end);
+                                    var midpoint = getMidpoint(start, end);
+                                    styles.push(
+                                        new ol.style.Style({
+                                            geometry: new ol.geom.LineString([start, end]),
+                                            stroke: new ol.style.Stroke({
+                                                color: 'rgba(255, 0, 0 , 1)', 
+                                                width: 2,
+                                                lineDash: [4, 8] // 定義虛線的模式
+                                            })
+                                        }),
+                                        new ol.style.Style({
+                                            geometry: new ol.geom.Point(end),
+                                            image: new ol.style.Icon({
+                                                src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/right-arrow.png', // 使用箭頭圖標
+                                                anchor: [0.5, 0.5],
+                                                rotateWithView: true,
+                                                rotation: angle-(45/ Math.PI)
+                                            })
+                                        }),
+                                        new ol.style.Style({
+                                            geometry: new ol.geom.Point(midpoint),
+                                            text: new ol.style.Text({
+                                                font: '12px Calibri,sans-serif',
+                                                fill: new ol.style.Fill({
+                                                    color: 'black'
+                                                }),
+                                                stroke: new ol.style.Stroke({
+                                                    color: 'white',
+                                                    width: 2
+                                                }),
+                                                text: '(' + feature.get('mark') + '): ' + feature.get('time')
+                                            })
+                                        })
+                                    );
+                                }
+                                return styles;
+                            }
+                        });
+
+                        // 移除之前的高亮圖層
+                        map.getLayers().getArray().forEach(layer => {
+                            if (layer.get('name') === 'highlightedLayer') {
+                                map.removeLayer(layer);
+                            }
+                        });
+
+                        vectorLayer.set('name', 'highlightedLayer');
+                        map.addLayer(vectorLayer);
+
+                        var extent = vectorSource.getExtent();
+                        map.getView().fit(extent, { size: map.getSize(), maxZoom: 18 });
+                    });
+            } else {
+                alert('請選擇家族和家族成員');
+            }
+        });
+
+        // 最小化和最大化功能
+        var toggleButton = document.getElementById('toggle-button');
+        //var layerSelect = document.getElementById('layer-select');
+        var layerContent = document.getElementById('layer-content');
+
+        toggleButton.addEventListener('click', function() {
+            if (layerContent.style.display === 'none') {
+                layerContent.style.display = 'block';
+                toggleButton.textContent = '-';
+            } else {
+                layerContent.style.display = 'none';
+                toggleButton.textContent = '+';
+            }
+        });
+    </script>
+</body>
+</html>

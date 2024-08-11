@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store04_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "416", "商品": "小間物", "備註": "吳服", "地段": "馬公", "地號": "416", "店名": "井手商店", "負責人": "井手英孝", "name": "井手商店" }, "geometry": { "type": "Point", "coordinates": [ 119.565038289157144, 23.564060823171875 ] } }
+]
+}

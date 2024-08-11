@@ -1,0 +1,29 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store01_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "55", "商品": "酒", "備註": "煙草/雜貨", "地段": "馬公", "地號": "55", "店名": "佐藤商店", "負責人": "佐藤卯太郎", "name": "佐藤商店" }, "geometry": { "type": "Point", "coordinates": [ 119.570182164011641, 23.568898488995071 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "115", "商品": "酒", "備註": "雜貨/吳服/煙草", "地段": "馬公", "地號": "115", "店名": "益發", "負責人": "吳萬益", "name": "益發" }, "geometry": { "type": "Point", "coordinates": [ 119.567249409918418, 23.566973267358506 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "185", "商品": "酒", "備註": "米/砂糖/煙草/雜貨", "地段": "馬公", "地號": "185", "店名": "山口商店", "負責人": "山口增五郎", "name": "山口商店" }, "geometry": { "type": "Point", "coordinates": [ 119.565962701900233, 23.564237005754915 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "279", "商品": "酒", "備註": "雜貨/煙草", "地段": "馬公", "地號": "279", "店名": "瑞成", "負責人": "張純鄉", "name": "瑞成" }, "geometry": { "type": "Point", "coordinates": [ 119.566634265423204, 23.563329647636142 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "292", "商品": "酒", "備註": "和洋雜貨/煙草", "地段": "馬公", "地號": "292", "店名": "大久保百貨店", "負責人": "大久保壽三郎", "name": "大久保百貨店" }, "geometry": { "type": "Point", "coordinates": [ 119.56365525637807, 23.56371204654204 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "388", "商品": "煙", "備註": "米/麥粉/雜貨", "地段": "馬公", "地號": "388", "店名": "和利", "負責人": "郭桑", "name": "和利" }, "geometry": { "type": "Point", "coordinates": [ 119.564894490135345, 23.563967383784163 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "390", "商品": "煙", "備註": "雜貨/煙草", "地段": "馬公", "地號": "390", "店名": "新聯合", "負責人": "王有並", "name": "新聯合" }, "geometry": { "type": "Point", "coordinates": [ 119.564897138402387, 23.563734887331055 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "402", "商品": "煙", "備註": "雜貨", "地段": "馬公", "地號": "402", "店名": "瑞發", "負責人": "陳彬", "name": "瑞發" }, "geometry": { "type": "Point", "coordinates": [ 119.565100082081727, 23.563836201774674 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "419", "商品": "煙", "備註": "米/雜貨/薪炭", "地段": "馬公", "地號": "419", "店名": "協長成", "負責人": "方勇", "name": "協長成" }, "geometry": { "type": "Point", "coordinates": [ 119.564907835726984, 23.564139441882602 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "425", "商品": "煙", "備註": "雜貨/棺木", "地段": "馬公", "地號": "425", "店名": "茂成", "負責人": "林勇", "name": "茂成" }, "geometry": { "type": "Point", "coordinates": [ 119.564740860178219, 23.564181290956959 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "426", "商品": "煙", "備註": "雜貨", "地段": "馬公", "地號": "426", "店名": "新合成", "負責人": "陳壁", "name": "新合成" }, "geometry": { "type": "Point", "coordinates": [ 119.564677529824195, 23.56416345314512 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "432", "商品": "煙", "備註": "米/雜貨", "地段": "馬公", "地號": "432", "店名": "豐泉", "負責人": "陳哲", "name": "豐泉" }, "geometry": { "type": "Point", "coordinates": [ 119.564660104320097, 23.564311523410051 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "490", "商品": "煙", "備註": "煙草/米/雜貨/醬油", "地段": "馬公", "地號": "490", "店名": "金義德", "負責人": "顏恭", "name": "金義德" }, "geometry": { "type": "Point", "coordinates": [ 119.56547913674072, 23.565229313495234 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "589", "商品": "煙", "備註": "?子/雜貨", "地段": "馬公", "地號": "589", "店名": "盛興", "負責人": "游泉", "name": "盛興" }, "geometry": { "type": "Point", "coordinates": [ 119.564984593912612, 23.565488274076849 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "669", "商品": "煙", "備註": "和洋雜貨/煙草", "地段": "馬公", "地號": "669", "店名": null, "負責人": "洪氏保惜", "name": "洪氏保惜" }, "geometry": { "type": "Point", "coordinates": [ 119.564834012449651, 23.565024703762742 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "677", "商品": "煙", "備註": "雜貨", "地段": "馬公", "地號": "677", "店名": "振記", "負責人": "鄭燕", "name": "振記" }, "geometry": { "type": "Point", "coordinates": [ 119.564230265764323, 23.564644473052279 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "704", "商品": "煙", "備註": "雜貨/煙草/米/薪炭", "地段": "馬公", "地號": "704", "店名": "瑞源", "負責人": "陳伯?", "name": "瑞源" }, "geometry": { "type": "Point", "coordinates": [ 119.564507464430278, 23.564353559084406 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "743", "商品": "酒", "備註": "雜貨/煙草/獸肉", "地段": "馬公", "地號": "743", "店名": null, "負責人": "原平九郎", "name": "原平九郎" }, "geometry": { "type": "Point", "coordinates": [ 119.5632910825625, 23.563861347112081 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "501", "商品": "煙", "備註": null, "地段": "馬公", "地號": "501", "店名": null, "負責人": "澎湖製酒公司", "name": "澎湖製酒公司" }, "geometry": { "type": "Point", "coordinates": [ 119.565422409775266, 23.565487074317783 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "352", "商品": "煙草", "備註": "雜貨/酒", "地段": "馬公", "地號": "352", "店名": "有志商會", "負責人": "林梯", "name": "有志商會" }, "geometry": { "type": "Point", "coordinates": [ 119.564413884057302, 23.563998443967019 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "437", "商品": "煙草", "備註": "雜貨/酒", "地段": "馬公", "地號": "437", "店名": "長記", "負責人": "高東", "name": "長記" }, "geometry": { "type": "Point", "coordinates": [ 119.564849366142326, 23.564469235623715 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "632", "商品": "煙草", "備註": null, "地段": "馬公", "地號": "632", "店名": null, "負責人": "鷲頭信恭", "name": "鷲頭信恭" }, "geometry": { "type": "Point", "coordinates": [ 119.563151684651274, 23.565766111166873 ] } }
+]
+}

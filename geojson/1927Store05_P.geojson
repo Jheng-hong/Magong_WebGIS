@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store05_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "115", "商品": "酒", "備註": "雜貨/吳服/煙草", "地段": "馬公", "地號": "115", "店名": "益發", "負責人": "吳萬益", "name": "益發" }, "geometry": { "type": "Point", "coordinates": [ 119.567249409918418, 23.566973267358506 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "328", "商品": "酒", "備註": "雜貨/吳服", "地段": "馬公", "地號": "328", "店名": "瑞興", "負責人": "劉石龍", "name": "瑞興" }, "geometry": { "type": "Point", "coordinates": [ 119.564117647553459, 23.563881297878702 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "416", "商品": "小間物", "備註": "吳服", "地段": "馬公", "地號": "416", "店名": "井手商店", "負責人": "井手英孝", "name": "井手商店" }, "geometry": { "type": "Point", "coordinates": [ 119.565038289157144, 23.564060823171875 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "113", "商品": "吳服", "備註": "雜貨/爆竹", "地段": "馬公", "地號": "113", "店名": "新發", "負責人": "吳萬虎", "name": "新發" }, "geometry": { "type": "Point", "coordinates": [ 119.567275690078219, 23.567058427725367 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "185", "商品": "吳服", "備註": "和洋雜貨/海產物", "地段": "馬公", "地號": "185", "店名": "西室百貨店", "負責人": "西室直次郎", "name": "西室百貨店" }, "geometry": { "type": "Point", "coordinates": [ 119.565962701900233, 23.564237005754915 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "229", "商品": "吳服", "備註": "雜貨", "地段": "馬公", "地號": "229", "店名": "振盛", "負責人": "林溪豹", "name": "振盛" }, "geometry": { "type": "Point", "coordinates": [ 119.566521716767312, 23.565068581912275 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "389", "商品": "吳服", "備註": "雜貨", "地段": "馬公", "地號": "389", "店名": "錦文", "負責人": "林隨", "name": "錦文" }, "geometry": { "type": "Point", "coordinates": [ 119.564960116935453, 23.563969534459169 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "453", "商品": "吳服", "備註": "雜貨/砂糖", "地段": "馬公", "地號": "453", "店名": "頂成", "負責人": "陳魁", "name": "頂成" }, "geometry": { "type": "Point", "coordinates": [ 119.564967587339737, 23.564848350150125 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "477", "商品": "吳服", "備註": null, "地段": "馬公", "地號": "477", "店名": "山吉吳服店", "負責人": "北川吉藏", "name": "山吉吳服店" }, "geometry": { "type": "Point", "coordinates": [ 119.565814650106674, 23.565020871112871 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "592", "商品": "吳服", "備註": null, "地段": "馬公", "地號": "592", "店名": "永興發", "負責人": "劉玉卿", "name": "永興發" }, "geometry": { "type": "Point", "coordinates": [ 119.564954857086704, 23.56520780205711 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "698", "商品": "吳服", "備註": "雜貨", "地段": "馬公", "地號": "698", "店名": "頂順成", "負責人": "周進春", "name": "頂順成" }, "geometry": { "type": "Point", "coordinates": [ 119.564598373968224, 23.564498016584199 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "696", "商品": "和洋雜物", "備註": "吳服", "地段": "馬公", "地號": "696", "店名": "富士田商店", "負責人": "富士田富藏", "name": "富士田商店" }, "geometry": { "type": "Point", "coordinates": [ 119.564733204507533, 23.564519586571762 ] } }
+]
+}

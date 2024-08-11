@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store07_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "292", "商品": "酒", "備註": "和洋雜貨/煙草", "地段": "馬公", "地號": "292", "店名": "大久保百貨店", "負責人": "大久保壽三郎", "name": "大久保百貨店" }, "geometry": { "type": "Point", "coordinates": [ 119.56365525637807, 23.56371204654204 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "669", "商品": "煙", "備註": "和洋雜貨/煙草", "地段": "馬公", "地號": "669", "店名": null, "負責人": "洪氏保惜", "name": "洪氏保惜" }, "geometry": { "type": "Point", "coordinates": [ 119.564834012449651, 23.565024703762742 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "185", "商品": "吳服", "備註": "和洋雜貨/海產物", "地段": "馬公", "地號": "185", "店名": "西室百貨店", "負責人": "西室直次郎", "name": "西室百貨店" }, "geometry": { "type": "Point", "coordinates": [ 119.565962701900233, 23.564237005754915 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "313", "商品": "和洋雜物", "備註": "履物", "地段": "馬公", "地號": "313", "店名": null, "負責人": "福田勝三", "name": "福田勝三" }, "geometry": { "type": "Point", "coordinates": [ 119.563886985180517, 23.563630969507287 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "352", "商品": "和洋雜物", "備註": null, "地段": "馬公", "地號": "352", "店名": "有志商會", "負責人": "林梯", "name": "有志商會" }, "geometry": { "type": "Point", "coordinates": [ 119.564413884057302, 23.563998443967019 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "670", "商品": "和洋雜物", "備註": null, "地段": "馬公", "地號": "670", "店名": "益美", "負責人": "高恭", "name": "益美" }, "geometry": { "type": "Point", "coordinates": [ 119.564796615510716, 23.564942265121203 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "696", "商品": "和洋雜物", "備註": "吳服", "地段": "馬公", "地號": "696", "店名": "富士田商店", "負責人": "富士田富藏", "name": "富士田商店" }, "geometry": { "type": "Point", "coordinates": [ 119.564733204507533, 23.564519586571762 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "38", "商品": "和洋雜物", "備註": "賣藥", "地段": "馬公", "地號": "38", "店名": "救生堂", "負責人": "許令成", "name": "救生堂" }, "geometry": { "type": "Point", "coordinates": [ 119.568067313113332, 23.567751495751427 ] } }
+]
+}

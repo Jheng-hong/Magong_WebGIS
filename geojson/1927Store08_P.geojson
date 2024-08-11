@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store08_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "298", "商品": "寫真業", "備註": null, "地段": "馬公", "地號": "298", "店名": "妙中", "負責人": "邵魁", "name": "妙中" }, "geometry": { "type": "Point", "coordinates": [ 119.563698791875936, 23.563896957183225 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "491", "商品": "寫真業", "備註": null, "地段": "馬公", "地號": "491", "店名": "中和", "負責人": "趙置", "name": "中和" }, "geometry": { "type": "Point", "coordinates": [ 119.565431514844036, 23.565117615432044 ] } }
+]
+}

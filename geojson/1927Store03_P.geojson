@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "1927Store03_P",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "landnumber": "359", "商品": "清涼飲料水", "備註": "白米/雜貨", "地段": "馬公", "地號": "359", "店名": "長順", "負責人": "陳潤", "name": "長順" }, "geometry": { "type": "Point", "coordinates": [ 119.564626200344222, 23.56405979059009 ] } }
+]
+}

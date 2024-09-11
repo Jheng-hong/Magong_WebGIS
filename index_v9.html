@@ -135,6 +135,8 @@
                 <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
                 <label for="layer4">臺灣堡圖(1904): <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
                 <input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
+				<label for="layer7">美軍航照圖(1956): <input type="checkbox" id="layer7" name="layer" value="Layer7"></label>
+                <input type="range" class="slider" id="sliderLayer7" min="0" max="1" step="0.1" value="1"><br>
 				<label for="layer6">臺灣通用電子地圖(灰階): <input type="checkbox" id="layer6" name="layer" value="Layer6"></label>
                 <input type="range" class="slider" id="sliderLayer6" min="0" max="1" step="0.1" value="1"><br>
                 <label for="layer5">Google地圖: <input type="checkbox" id="layer5" name="layer" value="Layer5"></label>
@@ -265,7 +267,7 @@
                         })
                     });
                 },
-                zIndex: 2
+                zIndex: 3
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
@@ -300,6 +302,16 @@
                     style: 'default'
 				})
             }),
+
+			'Layer7':new ol.layer.Image({
+				source: new ol.source.ImageStatic({
+					url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geotiff/makung.png', // 替换为转换后的 PNG 图像的 URL
+					imageExtent: [119.559831388, 23.5615526013, 119.579359095, 23.576286934], // 指定图像的范围
+					projection: 'EPSG:4326', // 依据您的坐标系统调整投影
+				}),
+				opacity: 1,
+                zIndex: 2
+			}),
         };
 
         Object.keys(layers).forEach(function(key) {

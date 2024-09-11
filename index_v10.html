@@ -267,7 +267,7 @@
                         })
                     });
                 },
-                zIndex: 2
+                zIndex: 3
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
@@ -299,11 +299,19 @@
                     }),
                     extent: projectionExtent,
                     style: 'default'
-				})
+				}),
+                opacity: 1,
+                zIndex: 2
             }),
-            'Layer7': 
-            
-            ,
+            'Layer7': new ol.layer.Image({
+                source: new ol.source.ImageStatic({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geotiff/makung1956_4326.tif',
+                    imageExtent: ol.proj.transformExtent([119.5598313880000063, 23.5615526730000013, 119.5793589989999930, 23.5762869339999988], 'EPSG:4326', 'EPSG:3857'),
+                    projection: 'EPSG:3857',
+                }),
+                opacity: 1,
+                zIndex: 2
+            }),
         };
 
         Object.keys(layers).forEach(function(key) {

@@ -114,6 +114,9 @@
 				<label for="item16"><input type="checkbox" id="item16" name="layer" value="Item16">商店:寫真(1927)</label>
                 <label for="item7"><input type="checkbox" id="item7" name="layer" value="Item7">婦人病院</label>
                 <label for="item8"><input type="checkbox" id="item8" name="layer" value="Item8">警察官吏派出所(1907)</label>
+				<label for="item17"><input type="checkbox" id="item17" name="layer" value="Item17">日軍:憲兵</label>
+				<label for="item18"><input type="checkbox" id="item18" name="layer" value="Item18">日軍:陸軍</label>
+				<label for="item19"><input type="checkbox" id="item19" name="layer" value="Item19">日軍:海軍</label>
             </div>
             <h4>家族遷移路線</h4>
             <div class="top-bar">
@@ -971,7 +974,136 @@
 					return styles;
 				},
 				zIndex: 5
-			})
+			}),
+			'Item17': new ol.layer.Vector({
+				source: new ol.source.Vector({
+					url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/militaryPolice.geojson',
+					format: new ol.format.GeoJSON()
+				}),
+				style: function(feature) {
+					var geometry = feature.getGeometry();
+					var styles = [];
+					geometry.getPolygons().forEach(function(polygon) {
+						styles.push(new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(255, 0, 0, 1)', 
+								width: 2 
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(255, 0, 0, 0.2)' 
+							})
+						}));
+						var center = polygon.getInteriorPoint().getCoordinates();
+						styles.push(new ol.style.Style({
+							geometry: new ol.geom.Point(center),
+							image: new ol.style.Icon({
+								src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/icon/militaryPolice.png', 
+								anchor: [0.5, 0.5],
+								rotateWithView: true
+							}),
+							text: new ol.style.Text({
+								font: '12px Calibri,sans-serif',
+								fill: new ol.style.Fill({ color: 'rgba(47, 79, 79, 1)' }),
+								stroke: new ol.style.Stroke({
+									color: 'rgba(255, 0, 0, 0.4)', 
+									width: 3 
+								}),
+								text: feature.get('name'),
+								offsetX: 15, // 向右偏移
+								offsetY: -15 // 向上偏移
+							})
+						}));
+					});
+					return styles;
+				},
+				zIndex: 5
+			}),
+			'Item18': new ol.layer.Vector({
+				source: new ol.source.Vector({
+					url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/army.geojson',
+					format: new ol.format.GeoJSON()
+				}),
+				style: function(feature) {
+					var geometry = feature.getGeometry();
+					var styles = [];
+					geometry.getPolygons().forEach(function(polygon) {
+						styles.push(new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(78, 91, 49, 1)', 
+								width: 2 
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(78, 91, 49, 0.2)' 
+							})
+						}));
+						var center = polygon.getInteriorPoint().getCoordinates();
+						styles.push(new ol.style.Style({
+							geometry: new ol.geom.Point(center),
+							image: new ol.style.Icon({
+								src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/icon/army.png', 
+								anchor: [0.5, 0.5],
+								rotateWithView: true
+							}),
+							text: new ol.style.Text({
+								font: '12px Calibri,sans-serif',
+								fill: new ol.style.Fill({ color: 'rgba(47, 79, 79, 1)' }),
+								stroke: new ol.style.Stroke({
+									color: 'rgba(78, 91, 49, 0.4)', 
+									width: 3 
+								}),
+								text: feature.get('name'),
+								offsetX: 15, // 向右偏移
+								offsetY: -15 // 向上偏移
+							})
+						}));
+					});
+					return styles;
+				},
+				zIndex: 5
+			}),
+			'Item19': new ol.layer.Vector({
+				source: new ol.source.Vector({
+					url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/navy.geojson',
+					format: new ol.format.GeoJSON()
+				}),
+				style: function(feature) {
+					var geometry = feature.getGeometry();
+					var styles = [];
+					geometry.getPolygons().forEach(function(polygon) {
+						styles.push(new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(0, 0, 128, 1)', 
+								width: 2 
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(0, 0, 128, 0.2)' 
+							})
+						}));
+						var center = polygon.getInteriorPoint().getCoordinates();
+						styles.push(new ol.style.Style({
+							geometry: new ol.geom.Point(center),
+							image: new ol.style.Icon({
+								src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/icon/navy.png', 
+								anchor: [0.5, 0.5],
+								rotateWithView: true
+							}),
+							text: new ol.style.Text({
+								font: '12px Calibri,sans-serif',
+								fill: new ol.style.Fill({ color: 'rgba(47, 79, 79, 1)' }),
+								stroke: new ol.style.Stroke({
+									color: 'rgba(0, 0, 128, 0.4)', 
+									width: 3 
+								}),
+								text: feature.get('name'),
+								offsetX: 15, // 向右偏移
+								offsetY: -15 // 向上偏移
+							})
+						}));
+					});
+					return styles;
+				},
+				zIndex: 5
+			}),
         };
 
         Object.keys(pointLayers).forEach(function(key) {
@@ -1236,6 +1368,11 @@
 			// 重置滑動條
 			document.querySelectorAll('.slider').forEach(function(slider) {
 				slider.value = 1;
+				var layerId = slider.id.replace('slider', ''); // 假設滑動條的ID是與圖層ID相關聯的，例如 'sliderLayer1'
+				var layer = layers[layerId];
+				if (layer) {
+					layer.setOpacity(1); // 將圖層透明度重置為1
+				}
 			});
 			// 清除家族遷移路線的圖層
 			map.getLayers().getArray().forEach(function(layer) {

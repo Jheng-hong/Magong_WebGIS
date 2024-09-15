@@ -208,7 +208,7 @@
                         })
                     });
                 },
-                zIndex: 4
+                zIndex: 6
             }),
             'Layer2': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -239,7 +239,7 @@
                         })
                     });
                 },
-                zIndex: 5
+                zIndex: 7
             }),
             'Layer3': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -270,14 +270,14 @@
                         })
                     });
                 },
-                zIndex: 3
+                zIndex: 5
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
                     url: 'https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}'
                 }),
                 opacity: 1,
-                zIndex: 2
+                zIndex: 4
             }),
             'Layer5': new ol.layer.Tile({
                 source: new ol.source.XYZ({
@@ -303,7 +303,9 @@
                     }),
                     extent: projectionExtent,
                     style: 'default'
-				})
+				}),
+                opacity: 1,
+                zIndex: 2
             }),
 
 			'Layer7':new ol.layer.Image({
@@ -313,7 +315,7 @@
 					projection: 'EPSG:4326', // 依据您的坐标系统调整投影
 				}),
 				opacity: 1,
-                zIndex: 2
+                zIndex: 3
 			}),
         };
 

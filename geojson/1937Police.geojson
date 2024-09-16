@@ -3,7 +3,8 @@
 "name": "1937Police",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公南與馬公水上(合署辦公)" }, "geometry": { "type": "Point", "coordinates": [ 119.563544552701586, 23.563291313652151 ] } },
-{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公北" }, "geometry": { "type": "Point", "coordinates": [ 119.56779687587445, 23.56754146898195 ] } }
+{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公水上、馬公南(初期合署辦公)" }, "geometry": { "type": "Point", "coordinates": [ 119.563544552701586, 23.563291313652151 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公北" }, "geometry": { "type": "Point", "coordinates": [ 119.56779687587445, 23.56754146898195 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公南(後期)" }, "geometry": { "type": "Point", "coordinates": [ 119.565502028043582, 23.565364764544977 ] } }
 ]
 }

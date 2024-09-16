@@ -5,6 +5,6 @@
 "features": [
 { "type": "Feature", "properties": { "Name": "廳直轄" }, "geometry": { "type": "Point", "coordinates": [ 119.563537045983736, 23.564774105127661 ] } },
 { "type": "Feature", "properties": { "Name": "馬公水上" }, "geometry": { "type": "Point", "coordinates": [ 119.563544552701558, 23.563291313652151 ] } },
-{ "type": "Feature", "properties": { "Name": "紅木埕" }, "geometry": { "type": "Point", "coordinates": [ 119.568751402494726, 23.567852751446047 ] } }
+{ "type": "Feature", "properties": { "Name": "紅木埕" }, "geometry": { "type": "Point", "coordinates": [ 119.56829790957444, 23.567643393394231 ] } }
 ]
 }

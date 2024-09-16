@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "1907Police",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "廳直轄警察官吏派出所" }, "geometry": { "type": "Point", "coordinates": [ 119.563537045983736, 23.564774105127661 ] } },
+{ "type": "Feature", "properties": { "Name": "馬公水上警察官吏派出所" }, "geometry": { "type": "Point", "coordinates": [ 119.563544552701558, 23.563291313652151 ] } },
+{ "type": "Feature", "properties": { "Name": "紅木埕警察官吏派出所" }, "geometry": { "type": "Point", "coordinates": [ 119.56829790957444, 23.567643393394231 ] } }
+]
+}

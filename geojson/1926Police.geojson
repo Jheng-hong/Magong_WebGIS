@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "1926Police",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公水上" }, "geometry": { "type": "Point", "coordinates": [ 119.563544552701586, 23.563291313652151 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Name": "馬公(廳直轄)" }, "geometry": { "type": "Point", "coordinates": [ 119.56353704598375, 23.564774105127658 ] } }
+]
+}

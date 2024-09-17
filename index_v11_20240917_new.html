@@ -1327,81 +1327,109 @@
                                 for (var i = 0; i < coordinates.length - 1; i++) {
                                     var start = coordinates[i];
                                     var end = coordinates[i + 1];
-                                    var angle = getAngle(start, end);
-                                    //var midpoint = getMidpoint(start, end);
-									// 控制點位置，可以根據需要調整，這裡取中點並稍微偏移
-									var control = getMidpoint(start, end);
-									control[1] += 50; // 向上偏移以產生曲線
-									// 獲取 Bezier 曲線的點
-									var bezierPoints = getBezierCurvePoints(start, end, control, 100);
-									// 計算弧線中點
-									var curveMidpoint = getMidpointOfCurve(bezierPoints);
-									
 
-                                    styles.push(
-										new ol.style.Style({
-											geometry: new ol.geom.Point(start),
-											image: new ol.style.Circle({
-												radius: 10,
-												fill: new ol.style.Fill({
-													color: 'rgba(255, 255, 148, 1)'
-												})
-											}),
-											zIndex: 11
-										}),
-										new ol.style.Style({
-											geometry: new ol.geom.Point(end),
-											image: new ol.style.Circle({
-												radius: 10,
-												fill: new ol.style.Fill({
-													color: 'rgba(255, 255, 56, 1)'
-												})
-											}),
-											zIndex: 12
-										}),
-                                        new ol.style.Style({
-                                            geometry: new ol.geom.LineString(bezierPoints),
-                                            stroke: new ol.style.Stroke({
-                                                color: 'rgba(255, 82, 82, 0.75)', 
-                                                width: 2,
-                                                lineDash: [4, 8] // 定義虛線的模式
-                                            }),
-											zIndex: 13
-                                        }),
-                                        new ol.style.Style({
-                                            geometry: new ol.geom.Point(end),
-                                            image: new ol.style.Icon({
-                                                src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/icon/right-arrow.png', // 使用箭頭圖標
-                                                anchor: [0.5, 0.5],
-                                                rotateWithView: true,
-                                                rotation: angle-(45/ Math.PI)
-                                            }),
-											zIndex: 14
-                                        }),
-                                        new ol.style.Style({
-                                            geometry: new ol.geom.Point(curveMidpoint),
-                                            text: new ol.style.Text({
-                                                font: '14px Calibri,sans-serif',
-                                                fill: new ol.style.Fill({
-                                                    color: 'rgba(255, 82, 82, 1)'
+                                    if (start[0] === end[0] && start[1] === end[1]) {
+                                        // 起点和终点相同，只绘制点和标签
+                                        styles.push(
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(start),
+                                                image: new ol.style.Circle({
+                                                    radius: 10,
+                                                    fill: new ol.style.Fill({
+                                                        color: 'rgba(255, 255, 148, 1)'
+                                                    })
                                                 }),
-                                                stroke: new ol.style.Stroke({
-                                                    color: 'rgba(255, 255, 56, 1)',
-                                                    width: 2
-                                                }),
-                                                text: feature.get('label'),
-												zIndex: 15
+                                                zIndex: 11
+                                            }),
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(start),
+                                                text: new ol.style.Text({
+                                                    font: '14px Calibri,sans-serif',
+                                                    fill: new ol.style.Fill({
+                                                        color: 'rgba(255, 82, 82, 1)'
+                                                    }),
+                                                    stroke: new ol.style.Stroke({
+                                                        color: 'rgba(255, 255, 56, 1)',
+                                                        width: 2
+                                                    }),
+                                                    text: feature.get('label'),
+                                                    zIndex: 15
+                                                })
                                             })
-                                        })
-                                    );
+                                        );
+                                    } else {
+                                        // 起点和终点不同，绘制线、点和标签
+                                        var angle = getAngle(start, end);
+                                        // 计算 Bezier 曲线
+                                        var control = getMidpoint(start, end);
+                                        control[1] += 50; // 调整控制点以产生曲线
+                                        var bezierPoints = getBezierCurvePoints(start, end, control, 100);
+                                        var curveMidpoint = getMidpointOfCurve(bezierPoints);
+
+                                        styles.push(
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(start),
+                                                image: new ol.style.Circle({
+                                                    radius: 10,
+                                                    fill: new ol.style.Fill({
+                                                        color: 'rgba(255, 255, 148, 1)'
+                                                    })
+                                                }),
+                                                zIndex: 11
+                                            }),
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(end),
+                                                image: new ol.style.Circle({
+                                                    radius: 10,
+                                                    fill: new ol.style.Fill({
+                                                        color: 'rgba(255, 255, 56, 1)'
+                                                    })
+                                                }),
+                                                zIndex: 12
+                                            }),
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.LineString(bezierPoints),
+                                                stroke: new ol.style.Stroke({
+                                                    color: 'rgba(255, 82, 82, 0.75)', 
+                                                    width: 2,
+                                                    lineDash: [4, 8] // 定義虛線的模式
+                                                }),
+                                                zIndex: 13
+                                            }),
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(end),
+                                                image: new ol.style.Icon({
+                                                    src: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/icon/right-arrow.png',
+                                                    anchor: [0.5, 0.5],
+                                                    rotateWithView: true,
+                                                    rotation: angle - (45 / Math.PI)
+                                                }),
+                                                zIndex: 14
+                                            }),
+                                            new ol.style.Style({
+                                                geometry: new ol.geom.Point(curveMidpoint),
+                                                text: new ol.style.Text({
+                                                    font: '14px Calibri,sans-serif',
+                                                    fill: new ol.style.Fill({
+                                                        color: 'rgba(255, 82, 82, 1)'
+                                                    }),
+                                                    stroke: new ol.style.Stroke({
+                                                        color: 'rgba(255, 255, 56, 1)',
+                                                        width: 2
+                                                    }),
+                                                    text: feature.get('label'),
+                                                    zIndex: 15
+                                                })
+                                            })
+                                        );
+                                    }
                                 }
                                 return styles;
                             },
-                            zIndex: 20
+                            zIndex: 20 // 确保图层在顶层
                         });
-						
 
-                        // 移除之前的高亮圖層
+                        // 移除之前的高亮图层
                         map.getLayers().getArray().forEach(layer => {
                             if (layer.get('name') === 'highlightedLayer') {
                                 map.removeLayer(layer);

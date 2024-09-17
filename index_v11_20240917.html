@@ -1204,7 +1204,7 @@
         });
 
         // 加載 JSON 數據並設置選項
-        fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/test.json')
+        fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/20240917.json')
             .then(response => response.json())
             .then(data => {
                 var familySelect = document.getElementById('family-select');
@@ -1347,7 +1347,7 @@
 													color: 'rgba(255, 255, 148, 1)'
 												})
 											}),
-											zIndex: 1
+											zIndex: 11
 										}),
 										new ol.style.Style({
 											geometry: new ol.geom.Point(end),
@@ -1357,7 +1357,19 @@
 													color: 'rgba(255, 255, 56, 1)'
 												})
 											}),
-											zIndex: 2
+                                            text: new ol.style.Text({
+                                                font: '14px Calibri,sans-serif',
+                                                fill: new ol.style.Fill({
+                                                    color: 'rgba(255, 82, 82, 1)'
+                                                }),
+                                                stroke: new ol.style.Stroke({
+                                                    color: 'rgba(255, 255, 56, 1)',
+                                                    width: 2
+                                                }),
+                                                text: feature.get('startP'),
+												zIndex: 12
+                                            }),
+											zIndex: 12
 										}),
                                         new ol.style.Style({
                                             geometry: new ol.geom.LineString(bezierPoints),
@@ -1366,7 +1378,7 @@
                                                 width: 2,
                                                 lineDash: [4, 8] // 定義虛線的模式
                                             }),
-											zIndex: 3
+											zIndex: 13
                                         }),
                                         new ol.style.Style({
                                             geometry: new ol.geom.Point(end),
@@ -1376,7 +1388,19 @@
                                                 rotateWithView: true,
                                                 rotation: angle-(45/ Math.PI)
                                             }),
-											zIndex: 4
+                                            text: new ol.style.Text({
+                                                font: '14px Calibri,sans-serif',
+                                                fill: new ol.style.Fill({
+                                                    color: 'rgba(255, 82, 82, 1)'
+                                                }),
+                                                stroke: new ol.style.Stroke({
+                                                    color: 'rgba(255, 255, 56, 1)',
+                                                    width: 2
+                                                }),
+                                                text: feature.get('endP'),
+												zIndex: 14
+                                            }),
+											zIndex: 14
                                         }),
                                         new ol.style.Style({
                                             geometry: new ol.geom.Point(curveMidpoint),
@@ -1390,13 +1414,14 @@
                                                     width: 2
                                                 }),
                                                 text: feature.get('label'),
-												zIndex: 5
+												zIndex: 15
                                             })
                                         })
                                     );
                                 }
                                 return styles;
-                            }
+                            },
+                            zIndex: 20
                         });
 						
 

@@ -1204,7 +1204,7 @@
         });
 
         // 加載 JSON 數據並設置選項
-        fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/20240918.json')
+        fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/戶主遷移_20240918.json')
             .then(response => response.json())
             .then(data => {
                 var familySelect = document.getElementById('family-select');
@@ -1303,7 +1303,7 @@
             var family = document.getElementById('family-select').value;
             var member = document.getElementById('member-select').value;
             if (family && member) {
-                fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/20240918.json')
+                fetch('https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/戶主遷移_20240918.json')
                     .then(response => response.json())
                     .then(data => {
                         var features = data.features.filter(feature => 

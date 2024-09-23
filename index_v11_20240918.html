@@ -1329,7 +1329,7 @@
                                     var end = coordinates[i + 1];
 
                                     if (start[0] === end[0] && start[1] === end[1]) {
-                                        // 起点和终点相同，只绘制点和标签
+                                        // 起點與終點相同的話-->繪製與標籤
                                         styles.push(
                                             new ol.style.Style({
                                                 geometry: new ol.geom.Point(start),
@@ -1361,11 +1361,11 @@
                                             })
                                         );
                                     } else {
-                                        // 起点和终点不同，绘制线、点和标签
+                                        // 起點與終點不同的話-->繪製線、點與標籤
                                         var angle = getAngle(start, end);
-                                        // 计算 Bezier 曲线
+                                        // 計算Bezier曲線
                                         var control = getMidpoint(start, end);
-                                        control[1] += 50; // 调整控制点以产生曲线
+                                        control[1] += 50; // 調整控制點已產生曲線
                                         var bezierPoints = getBezierCurvePoints(start, end, control, 100);
                                         var curveMidpoint = getMidpointOfCurve(bezierPoints);
 
@@ -1429,10 +1429,10 @@
                                 }
                                 return styles;
                             },
-                            zIndex: 20 // 确保图层在顶层
+                            zIndex: 20
                         });
 
-                        // 移除之前的高亮图层
+                        // 移除之前的highlightedLayer
                         map.getLayers().getArray().forEach(layer => {
                             if (layer.get('name') === 'highlightedLayer') {
                                 map.removeLayer(layer);

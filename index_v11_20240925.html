@@ -138,6 +138,8 @@
                 <input type="range" class="slider" id="sliderLayer2" min="0" max="1" step="0.1" value="1"><br>
                 <label for="layer3">媽宮街町界: <input type="checkbox" id="layer3" name="layer" value="Layer3"></label>
                 <input type="range" class="slider" id="sliderLayer3" min="0" max="1" step="0.1" value="1"><br>
+				<label for="layer9">空白圖層: <input type="checkbox" id="layer9" name="layer" value="Layer9"></label>
+                <input type="range" class="slider" id="sliderLayer9" min="0" max="1" step="0.1" value="1"><br>
                 <label for="layer4">日治臺灣堡圖(1904): <input type="checkbox" id="layer4" name="layer" value="Layer4"></label>
 				<input type="range" class="slider" id="sliderLayer4" min="0" max="1" step="0.1" value="1"><br>
 				<label for="layer8">日治地形圖(1921): <input type="checkbox" id="layer8" name="layer" value="Layer8"></label>
@@ -212,7 +214,7 @@
                         })
                     });
                 },
-                zIndex: 7
+                zIndex: 8
             }),
             'Layer2': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -243,7 +245,7 @@
                         })
                     });
                 },
-                zIndex: 8
+                zIndex: 9
             }),
             'Layer3': new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -274,7 +276,7 @@
                         })
                     });
                 },
-                zIndex: 6
+                zIndex: 7
             }),
             'Layer4': new ol.layer.Tile({
                 source: new ol.source.XYZ({
@@ -331,6 +333,24 @@
 				opacity: 1,
                 zIndex: 4
 			}),
+			'Layer9': new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    url: 'https://raw.githubusercontent.com/Jheng-hong/Magong_WebGIS/main/geojson/box.geojson',
+                    format: new ol.format.GeoJSON()
+                }),
+                opacity: 1,
+                style: function(feature) {
+                    return new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: 'rgba(255, 255, 255, 1)'
+                        }),
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 255, 255, 1)' 
+                        })
+                    });
+                },
+                zIndex: 6
+            }),
         };
 
         Object.keys(layers).forEach(function(key) {

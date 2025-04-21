@@ -1,0 +1,5134 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        121.302044,
+                        23.312146
+                    ],
+                    [
+                        119.5707848273,
+                        23.5687172337
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "金",
+                "owner": "金容兌",
+                "label": "(1)玉里183番地--1925/07/20-->(2)馬公76番地",
+                "startP": "玉里183番地",
+                "endP": "馬公76番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        120.289314,
+                        23.132219
+                    ],
+                    [
+                        119.5682002363,
+                        23.5679628515
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "姜",
+                "owner": "姜在永",
+                "label": "(1)善化374--1936/06/20-->(2)馬公33-1番地",
+                "startP": "善化374",
+                "endP": "馬公33-1番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧榮次郎_1",
+                "label": "(1)東町--1907/09/01-->(2)東町",
+                "startP": "東町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧榮次郎_1",
+                "label": "(3)宮內町--1909/12/14-->(4)東町",
+                "startP": "宮內町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧榮次郎_2",
+                "label": "(1)東町--1914/10/01-->(2)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧榮次郎_2",
+                "label": "(2)南町--1918/03/03-->(3)東町",
+                "startP": "南町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5662765917,
+                        23.5647721738
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧宇太郎",
+                "label": "(1)東町--1920/10/01-->(2)馬公250番地",
+                "startP": "東町",
+                "endP": "馬公250番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5650160454,
+                        23.5632740359
+                    ],
+                    [
+                        119.5662765917,
+                        23.5647721738
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "上瀧",
+                "owner": "上瀧利雄",
+                "label": "(1)馬公288番地--1924/12/06-->(2)馬公250番地",
+                "startP": "馬公288番地",
+                "endP": "馬公250番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎虎三(宮崎寅三)_1",
+                "label": "(1)宮內町--1906/10/03-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎虎三(宮崎寅三)_1",
+                "label": "(2)南町--1907/03/31-->(3)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎虎三(宮崎寅三)_2",
+                "label": "(1)埔仔尾--1907/08/19-->(6)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎マチ",
+                "label": "(1)埔仔尾--1912/11/31-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701034711,
+                        23.5688717829
+                    ],
+                    [
+                        119.5699714741,
+                        23.5689264657
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎辰市",
+                "label": "(1)馬公52番地--1914/09/01-->(2)馬公53番地",
+                "startP": "馬公52番地",
+                "endP": "馬公53番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎シカ_1",
+                "label": "(1)埔仔尾--1916/08/29-->(3)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701034711,
+                        23.5688717829
+                    ],
+                    [
+                        119.5699714741,
+                        23.5689264657
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎シカ_2",
+                "label": "(1)馬公52番地--1944/11/30-->(2)馬公53番地",
+                "startP": "馬公52番地",
+                "endP": "馬公53番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎元一郎",
+                "label": "(1)埔仔尾--1916/12/28-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701034711,
+                        23.5688717829
+                    ],
+                    [
+                        119.5699714741,
+                        23.5689264657
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（佐賀）",
+                "owner": "宮崎初美",
+                "label": "(1)馬公52番地--1942/11/30-->(2)馬公53番地",
+                "startP": "馬公52番地",
+                "endP": "馬公53番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5651215337,
+                        23.5639369569
+                    ],
+                    [
+                        119.5707848273,
+                        23.5687172337
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "宮崎（大分）",
+                "owner": "宮崎シナ2",
+                "label": "(1)馬公400番地--1927/12/08-->(2)馬公76番地",
+                "startP": "馬公400番地",
+                "endP": "馬公76番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "堀川",
+                "owner": "堀川トク",
+                "label": "(1)南町--1907/07/26-->(2)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "堀江",
+                "owner": "堀江善太郎",
+                "label": "(1)埔仔尾--1920/10/01-->(2)馬公82番地",
+                "startP": "埔仔尾",
+                "endP": "馬公82番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ],
+                    [
+                        119.5696686724,
+                        23.5689893182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "堀江",
+                "owner": "堀江善太郎",
+                "label": "(2)馬公82番地--1924/04/27-->(3)馬公49番地",
+                "startP": "馬公82番地",
+                "endP": "馬公49番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志次平",
+                "label": "(1)南町--1905/01/11-->(2)北町",
+                "startP": "南町",
+                "endP": "北町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志次平",
+                "label": "(2)北町--1907/06/23-->(3)埔仔尾",
+                "startP": "北町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志次平",
+                "label": "(3)埔仔尾--1920/10/01-->(4)馬公82番地",
+                "startP": "埔仔尾",
+                "endP": "馬公82番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志龜一郎_1",
+                "label": "(1)南町--1907/05/25-->(2)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志龜一郎_2",
+                "label": "(1)埔仔尾--1913/11/12-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ],
+                    [
+                        119.5708955747,
+                        23.568815464
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志安雄",
+                "label": "(1)馬公82番地--1924/07/01-->(2)馬公74番地",
+                "startP": "馬公82番地",
+                "endP": "馬公74番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5708955747,
+                        23.568815464
+                    ],
+                    [
+                        119.5708955747,
+                        23.568815464
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志安雄",
+                "label": "(2)馬公74番地--1927/07/01-->(3)馬公74番地",
+                "startP": "馬公74番地",
+                "endP": "馬公74番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5708955747,
+                        23.568815464
+                    ],
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志末雄_2",
+                "label": "(1)馬公74番地--1944/01/20-->(2)馬公82番地",
+                "startP": "馬公74番地",
+                "endP": "馬公82番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5717570895,
+                        23.570279721
+                    ],
+                    [
+                        119.5696494589,
+                        23.568661179
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "味志一",
+                "label": "(1)紅木埕373--1927/10/26-->(2)馬公48番地",
+                "startP": "紅木埕373",
+                "endP": "馬公48番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "松尾富太郎",
+                "label": "(1)南町--1911/06/29-->(2)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563183926,
+                        23.5641444337
+                    ],
+                    [
+                        119.5634454035,
+                        23.5639925423
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "松尾富太郎",
+                "label": "(3)馬公740番地--1927/05/30-->(4)馬公742番地",
+                "startP": "馬公740番地",
+                "endP": "馬公742番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5634454035,
+                        23.5639925423
+                    ],
+                    [
+                        119.5636100329,
+                        23.5660884991
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "松尾富太郎",
+                "label": "(4)馬公742番地--1937/01/31-->(5)馬公630番地",
+                "startP": "馬公742番地",
+                "endP": "馬公630番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ],
+                    [
+                        119.5708955747,
+                        23.568815464
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "味志",
+                "owner": "篠田マサ",
+                "label": "(1)馬公82番地--1923/06/01-->(2)馬公74番地",
+                "startP": "馬公82番地",
+                "endP": "馬公74番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "松岡太郎_1",
+                "label": "(1)南町--1907/06/23-->(2)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "松岡太郎_2",
+                "label": "(1)南町--1904/12/03-->(2)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "天野シヨウ",
+                "label": "(1)埔仔尾--1909/10/05-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "松岡吉春",
+                "label": "(1)埔仔尾--1912/11/30-->(3)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5702240065,
+                        23.5683668486
+                    ],
+                    [
+                        119.5668793058,
+                        23.5648583279
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "松岡吉春",
+                "label": "(4)馬公79番地--1929/12/19-->(5)馬公237番地",
+                "startP": "馬公79番地",
+                "endP": "馬公237番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松岡",
+                "owner": "梅野マツ",
+                "label": "(1)宮內町--1911/06/28-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中林造_1",
+                "label": "(1)北町--1909/07/22-->(2)埔仔尾",
+                "startP": "北町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中林造_2",
+                "label": "(1)埔仔尾--1915/09/21-->(2)馬公45番地",
+                "startP": "埔仔尾",
+                "endP": "馬公45番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5681563584,
+                        23.5675345428
+                    ],
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中ケサ_1",
+                "label": "(1)馬公99番地--1919/05/24-->(2)馬公45番地",
+                "startP": "馬公99番地",
+                "endP": "馬公45番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ],
+                    [
+                        119.5643125587,
+                        23.5651399837
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中ケサ_2",
+                "label": "(1)馬公45番地--1928/04/10-->(2)馬公656番地",
+                "startP": "馬公45番地",
+                "endP": "馬公656番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5643125587,
+                        23.5651399837
+                    ],
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中ケサ_2",
+                "label": "(2)馬公656番地--1928/11/06-->(3)馬公45番地",
+                "startP": "馬公656番地",
+                "endP": "馬公45番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5681563584,
+                        23.5675345428
+                    ],
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田中",
+                "owner": "田中梅吉",
+                "label": "(1)馬公99番地--1920/10/01-->(2)馬公45番地",
+                "startP": "馬公99番地",
+                "endP": "馬公45番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.6001919,
+                        23.6669998
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(1)大赤崁支廳宿舍--1906/08/27-->(2)東町",
+                "startP": "大赤崁支廳宿舍",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.58257660049028,
+                        23.564338663741474
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(2)東町--1907/11/14-->(3)文澳鄉",
+                "startP": "東町",
+                "endP": "文澳鄉"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.58257660049028,
+                        23.564338663741474
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(3)文澳鄉--1910/02/01-->(4)宮內町",
+                "startP": "文澳鄉",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(4)宮內町--1911/12/31-->(6)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(7)埔仔尾--1918/04/07-->(8)南町",
+                "startP": "埔仔尾",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(8)南町--1918/07/04-->(9)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(10)東町--1919/03/01-->(11)埔仔尾",
+                "startP": "東町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(11)埔仔尾--1920/10/01-->(12)馬公86番地",
+                "startP": "埔仔尾",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ],
+                    [
+                        119.5701933777,
+                        23.568706264
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤伊太郎",
+                "label": "(12)馬公86番地--1926/01/15-->(13)馬公80番地",
+                "startP": "馬公86番地",
+                "endP": "馬公80番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_1",
+                "label": "(1)宮內町--1913/08/13-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_1",
+                "label": "(2)南町--1914/02/17-->(3)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_2",
+                "label": "(1)宮內町--1915/04/08-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701933777,
+                        23.568706264
+                    ],
+                    [
+                        119.570612262,
+                        23.568633647
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_3",
+                "label": "(1)馬公80番地--1926/12/01-->(2)馬公77番地",
+                "startP": "馬公80番地",
+                "endP": "馬公77番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.570612262,
+                        23.568633647
+                    ],
+                    [
+                        119.5701933777,
+                        23.568706264
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_3",
+                "label": "(2)馬公77番地--1934/12/12-->(3)馬公80番地",
+                "startP": "馬公77番地",
+                "endP": "馬公80番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.56900978,
+                        23.5680018752
+                    ],
+                    [
+                        119.5631546998,
+                        23.565024893
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤滿壽_4",
+                "label": "(1)馬公86-2番地--1939/07/20-->(2)馬公643番地",
+                "startP": "馬公86-2番地",
+                "endP": "馬公643番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701933777,
+                        23.568706264
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "武藤",
+                "owner": "武藤晴江",
+                "label": "(1)馬公80番地--1936/11/02-->(2)馬公86番地",
+                "startP": "馬公80番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田幸太郎",
+                "label": "(1)南町--1902/09/18-->(2)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田幸太郎",
+                "label": "(3)宮內町--1909/03/16-->(4)西町",
+                "startP": "宮內町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田幸太郎",
+                "label": "(4)西町--1911/07/10-->(5)宮內町",
+                "startP": "西町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田幸太郎",
+                "label": "(5)宮內町--1912/06/02-->(6)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5636929486,
+                        23.5640072886
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田幸太郎",
+                "label": "(6)南町--1920/10/01-->(7)馬公301番地",
+                "startP": "南町",
+                "endP": "馬公301番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5636929486,
+                        23.5640072886
+                    ],
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "福田",
+                "owner": "福田カメ",
+                "label": "(1)馬公301番地--1924/04/17-->(2)馬公82番地",
+                "startP": "馬公301番地",
+                "endP": "馬公82番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(1)東町--1910/06/25-->(2)埔仔尾",
+                "startP": "東町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(2)埔仔尾--1917/02/25-->(3)南町",
+                "startP": "埔仔尾",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5638193342,
+                        23.5645511864
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(3)南町--1920/07/01-->(4)馬公731番地",
+                "startP": "南町",
+                "endP": "馬公731番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5638193342,
+                        23.5645511864
+                    ],
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(4)馬公731番地--1922/10/06-->(5)馬公457番地",
+                "startP": "馬公731番地",
+                "endP": "馬公457番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ],
+                    [
+                        119.5708115296,
+                        23.5725411595
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(5)馬公457番地--1924/01/25-->(6)火燒坪146",
+                "startP": "馬公457番地",
+                "endP": "火燒坪146"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5708115296,
+                        23.5725411595
+                    ],
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "岩男覺太郎",
+                "label": "(6)火燒坪146--1932/03/29-->(7)馬公45番地",
+                "startP": "火燒坪146",
+                "endP": "馬公45番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5749571,
+                        23.5719573
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(1)紅木埕鄉--1909/12/09-->(2)宮內町",
+                "startP": "紅木埕鄉",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(2)宮內町--1910/09/05-->(3)東町",
+                "startP": "宮內町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(3)東町--1912/09/10-->(4)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(4)南町--1912/11/22-->(5)西町",
+                "startP": "南町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(5)西町--1913/03/19-->(6)埔仔尾",
+                "startP": "西町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5657282593,
+                        23.5648765336
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(6)埔仔尾--1918/08/12-->(7)馬公475番地",
+                "startP": "埔仔尾",
+                "endP": "馬公475番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5657282593,
+                        23.5648765336
+                    ],
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(7)馬公475番地--1919/08/14-->(8)馬公457番地",
+                "startP": "馬公475番地",
+                "endP": "馬公457番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ],
+                    [
+                        119.5701933777,
+                        23.568706264
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_1",
+                "label": "(8)馬公457番地--1923/05/08-->(9)馬公80番地",
+                "startP": "馬公457番地",
+                "endP": "馬公80番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩男",
+                "owner": "竹國勝次郎_2",
+                "label": "(1)埔仔尾--1916/01/25-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田吉之",
+                "label": "(1)南町--1912/04/28-->(2)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田吉之",
+                "label": "(2)宮內町--1913/04/29-->(3)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5680956125,
+                        23.5678110124
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田吉之",
+                "label": "(3)埔仔尾--1920/10/01-->(4)馬公37番地",
+                "startP": "埔仔尾",
+                "endP": "馬公37番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5680956125,
+                        23.5678110124
+                    ],
+                    [
+                        119.5704527541,
+                        23.56850497
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田吉之",
+                "label": "(4)馬公37番地--1921/10/01-->(5)馬公78番地",
+                "startP": "馬公37番地",
+                "endP": "馬公78番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5680956125,
+                        23.5678110124
+                    ],
+                    [
+                        119.5704527541,
+                        23.56850497
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田ハル",
+                "label": "(1)馬公37番地--1920/06/30-->(2)馬公78番地",
+                "startP": "馬公37番地",
+                "endP": "馬公78番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5704527541,
+                        23.56850497
+                    ],
+                    [
+                        119.5680956125,
+                        23.5678110124
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "會田",
+                "owner": "會田ハル",
+                "label": "(2)馬公78番地--1921/10/01-->(3)馬公37番地",
+                "startP": "馬公78番地",
+                "endP": "馬公37番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "四元",
+                "owner": "四元龍之助",
+                "label": "(2)南町--1913/10/08-->(3)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "四元",
+                "owner": "四元龍之助",
+                "label": "(4)西町--1917/03/05-->(5)西町",
+                "startP": "西町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5666344204,
+                        23.5633359924
+                    ],
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "四元",
+                "owner": "四元龍之助",
+                "label": "(6)馬公279番地--1923/02/05-->(7)馬公82番地",
+                "startP": "馬公279番地",
+                "endP": "馬公82番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5699928725,
+                        23.5682431792
+                    ],
+                    [
+                        119.5701034711,
+                        23.5688717829
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "四元",
+                "owner": "四元利三郎",
+                "label": "(1)馬公82番地--1944/03/25-->(2)馬公52番地",
+                "startP": "馬公82番地",
+                "endP": "馬公52番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井上",
+                "owner": "井上林松",
+                "label": "(1)西町--1904/06/20-->(2)宮內町",
+                "startP": "西町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井上",
+                "owner": "井上林松",
+                "label": "(2)宮內町--1914/02/25-->(3)北町",
+                "startP": "宮內町",
+                "endP": "北町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5678030296,
+                        23.5655337672
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井上",
+                "owner": "井上くわ",
+                "label": "(1)北町--1920/10/01-->(2)馬公175番地",
+                "startP": "北町",
+                "endP": "馬公175番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "青木",
+                "owner": "青木ナヲ",
+                "label": "(1)西町--1908/09/01-->(2)宮內町",
+                "startP": "西町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563650846,
+                        23.5636741222
+                    ],
+                    [
+                        119.5632907086,
+                        23.5638617731
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "烏帽子",
+                "owner": "烏帽子榮藏",
+                "label": "(1)馬公291番地--1942/05/28-->(2)馬公743番地",
+                "startP": "馬公291番地",
+                "endP": "馬公743番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5632907086,
+                        23.5638617731
+                    ],
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "烏帽子",
+                "owner": "烏帽子榮藏",
+                "label": "(2)馬公743番地--1944/12/01-->(3)馬公414番地",
+                "startP": "馬公743番地",
+                "endP": "馬公414番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "野崎キヌ_2",
+                "label": "(1)東町--1917/02/09-->(2)馬公217番地",
+                "startP": "東町",
+                "endP": "馬公217番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "野崎キヌ_1",
+                "label": "(1)馬公217番地--1927/08/01-->(2)馬公86番地",
+                "startP": "馬公217番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ],
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "野崎キヌ_1",
+                "label": "(2)馬公86番地--1929/03/02-->(3)馬公217番地",
+                "startP": "馬公86番地",
+                "endP": "馬公217番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "寺地京次郎",
+                "label": "(1)東町--1913/10/27-->(2)馬公217番地",
+                "startP": "東町",
+                "endP": "馬公217番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ],
+                    [
+                        119.5678030296,
+                        23.5655337672
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "寺地京次郎",
+                "label": "(2)馬公217番地--1926/01/25-->(3)馬公175番地",
+                "startP": "馬公217番地",
+                "endP": "馬公175番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5678030296,
+                        23.5655337672
+                    ],
+                    [
+                        119.5659696331,
+                        23.5650863969
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野崎",
+                "owner": "寺地京次郎",
+                "label": "(3)馬公175番地--1928/01/10-->(4)馬公217番地",
+                "startP": "馬公175番地",
+                "endP": "馬公217番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井原",
+                "owner": "井原伊三太郎_1",
+                "label": "(1)南町--1918/01/05-->(2)西町",
+                "startP": "南町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5636904792,
+                        23.5638273962
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井原",
+                "owner": "井原伊三太郎_2",
+                "label": "(1)南町--1920/10/01-->(2)馬公295番地",
+                "startP": "南町",
+                "endP": "馬公295番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563798906,
+                        23.5664468659
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "井原",
+                "owner": "井原伊三太郎_3",
+                "label": "(1)馬公629番地--1935/02/01-->(2)馬公86番地",
+                "startP": "馬公629番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5636904792,
+                        23.5638273962
+                    ],
+                    [
+                        119.5631666508,
+                        23.5653214009
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(1)馬公295番地--1922/05/27-->(2)馬公637番地",
+                "startP": "馬公295番地",
+                "endP": "馬公637番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5631666508,
+                        23.5653214009
+                    ],
+                    [
+                        119.5661287968,
+                        23.5655756408
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(2)馬公637番地--1922/09/25-->(3)馬公200番地",
+                "startP": "馬公637番地",
+                "endP": "馬公200番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5661287968,
+                        23.5655756408
+                    ],
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(3)馬公200番地--1923/05/07-->(4)馬公457番地",
+                "startP": "馬公200番地",
+                "endP": "馬公457番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652187424,
+                        23.5649407058
+                    ],
+                    [
+                        119.5645531897,
+                        23.5652531152
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(4)馬公457番地--1924/05/07-->(5)馬公602番地",
+                "startP": "馬公457番地",
+                "endP": "馬公602番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645531897,
+                        23.5652531152
+                    ],
+                    [
+                        119.563798906,
+                        23.5664468659
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(5)馬公602番地--1924/08/09-->(8)馬公629番地",
+                "startP": "馬公602番地",
+                "endP": "馬公629番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563798906,
+                        23.5664468659
+                    ],
+                    [
+                        119.5630904679,
+                        23.5653274152
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(8)馬公629番地--1927/10/03-->(9)馬公638番地",
+                "startP": "馬公629番地",
+                "endP": "馬公638番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5630904679,
+                        23.5653274152
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(9)馬公638番地--1932/08/30-->(10)馬公86番地",
+                "startP": "馬公638番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ],
+                    [
+                        119.569093127,
+                        23.5677094011
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(10)馬公86番地--1935/11/03-->(11)馬公85番地",
+                "startP": "馬公86番地",
+                "endP": "馬公85番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.569093127,
+                        23.5677094011
+                    ],
+                    [
+                        119.5805300915,
+                        23.5739950835
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岡野",
+                "owner": "岡野圓藏",
+                "label": "(11)馬公85番地--1945/12/02-->(12)紅木埕2",
+                "startP": "馬公85番地",
+                "endP": "紅木埕2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "久保",
+                "owner": "久保和三平",
+                "label": "(1)南町--1903/05/09-->(2)西町",
+                "startP": "南町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "久保",
+                "owner": "久保和三平",
+                "label": "(2)西町--1907/07/24-->(3)埔仔尾",
+                "startP": "西町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "久保",
+                "owner": "久保和三平",
+                "label": "(3)埔仔尾--時間不詳-->(6)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "久保",
+                "owner": "久保信一",
+                "label": "(1)埔仔尾--1913/08/10-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5707848273,
+                        23.5687172337
+                    ],
+                    [
+                        119.570612262,
+                        23.568633647
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "久保",
+                "owner": "久保信一",
+                "label": "(3)埔仔尾76--1920/10/01-->(4)馬公77番地",
+                "startP": "埔仔尾76",
+                "endP": "馬公77番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "釜崎",
+                "owner": "釜崎元市",
+                "label": "(1)宮內町--1907/07/23-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "釜崎",
+                "owner": "釜崎元市",
+                "label": "(2)埔仔尾--1910/01/14-->(3)南町",
+                "startP": "埔仔尾",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永田",
+                "owner": "永田千代太",
+                "label": "(1)宮內町--1905/04/23-->(2)北町",
+                "startP": "宮內町",
+                "endP": "北町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永田",
+                "owner": "永田千代太",
+                "label": "(2)北町--1907/05/03-->(3)埔仔尾",
+                "startP": "北町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永田",
+                "owner": "永田千代太",
+                "label": "(3)埔仔尾--1909/07/22-->(4)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永田",
+                "owner": "永田千代太",
+                "label": "(5)東町--1913/05/02-->(6)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井市十郎",
+                "label": "(1)宮內町--1911/12/07-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井市十郎",
+                "label": "(2)埔仔尾--1913/11/30-->(3)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5697290134,
+                        23.5681547771
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井クニ",
+                "label": "(1)埔仔尾--1920/10/01-->(2)馬公83番地",
+                "startP": "埔仔尾",
+                "endP": "馬公83番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5697290134,
+                        23.5681547771
+                    ],
+                    [
+                        119.5649419688,
+                        23.5540888869
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井クニ",
+                "label": "(2)馬公83番地--1925/09/05-->(3)小案山1",
+                "startP": "馬公83番地",
+                "endP": "小案山1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5649419688,
+                        23.5540888869
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井クニ",
+                "label": "(3)小案山1--1926/01/10-->(4)馬公86番地",
+                "startP": "小案山1",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ],
+                    [
+                        119.5652078428,
+                        23.5651647393
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "永井",
+                "owner": "永井クニ",
+                "label": "(4)馬公86番地--1934/03/22-->(5)馬公494番地",
+                "startP": "馬公86番地",
+                "endP": "馬公494番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "森",
+                "owner": "森繁吉",
+                "label": "(1)東町--1908/08/15-->(2)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "森",
+                "owner": "森繁吉",
+                "label": "(2)南町--1914/10/01-->(3)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田殿",
+                "owner": "田殿市松",
+                "label": "(1)東町--1907/03/12-->(2)宮內町",
+                "startP": "東町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田殿",
+                "owner": "田殿市松",
+                "label": "(2)宮內町--1919/02/14-->(3)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5667735297,
+                        23.5640610789
+                    ],
+                    [
+                        119.5668814647,
+                        23.5660100698
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "田殿",
+                "owner": "田殿市松",
+                "label": "(4)馬公185-1番地--1938/05/17-->(5)馬公195-1番地",
+                "startP": "馬公185-1番地",
+                "endP": "馬公195-1番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "西口",
+                "owner": "西口德松_1",
+                "label": "(1)南町--1903/10/02-->(3)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "西口",
+                "owner": "西口德松_2",
+                "label": "(1)南町--1913/02/05-->(2)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "西口",
+                "owner": "西口德松_2",
+                "label": "(2)埔仔尾--1915/04/15-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "西口",
+                "owner": "西口チヤ",
+                "label": "(1)埔仔尾--1914/11/29-->(2)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5688928322,
+                        23.5681414117
+                    ],
+                    [
+                        119.5702719883,
+                        23.5688633298
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "西口",
+                "owner": "西口チヤ",
+                "label": "(3)馬公45番地--1924/11/12-->(4)馬公72番地",
+                "startP": "馬公45番地",
+                "endP": "馬公72番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5642680229,
+                        23.5653691264
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "廹間",
+                "owner": "廹間捨吉",
+                "label": "(1)西町--1916/06/25-->(2)馬公622番地",
+                "startP": "西町",
+                "endP": "馬公622番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642680229,
+                        23.5653691264
+                    ],
+                    [
+                        119.5661287968,
+                        23.5655756408
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "廹間",
+                "owner": "廹間捨吉",
+                "label": "(2)馬公622番地--1920/08/05-->(3)馬公200番地",
+                "startP": "馬公622番地",
+                "endP": "馬公200番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5661287968,
+                        23.5655756408
+                    ],
+                    [
+                        119.5636940971,
+                        23.5638609235
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "廹間",
+                "owner": "廹間捨吉",
+                "label": "(3)馬公200番地--1920/10/01-->(4)馬公296番地",
+                "startP": "馬公200番地",
+                "endP": "馬公296番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5636940971,
+                        23.5638609235
+                    ],
+                    [
+                        119.5634454035,
+                        23.5639925423
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "廹間",
+                "owner": "廹間捨吉",
+                "label": "(4)馬公296番地--1923/01/25-->(5)馬公742番地",
+                "startP": "馬公296番地",
+                "endP": "馬公742番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5634454035,
+                        23.5639925423
+                    ],
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "廹間",
+                "owner": "廹間捨吉",
+                "label": "(5)馬公742番地--1926/07/01-->(6)馬公414番地",
+                "startP": "馬公742番地",
+                "endP": "馬公414番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "伊藤",
+                "owner": "伊藤長治_1",
+                "label": "(1)宮內町--1918/02/05-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "伊藤",
+                "owner": "伊藤長治_1",
+                "label": "(2)南町--1918/07/30-->(3)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "伊藤",
+                "owner": "伊藤長治_1",
+                "label": "(3)宮內町--1920/10/01-->(4)馬公414番地",
+                "startP": "宮內町",
+                "endP": "馬公414番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ],
+                    [
+                        119.5657282593,
+                        23.5648765336
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "伊藤",
+                "owner": "伊藤長治_2",
+                "label": "(1)馬公414番地--1922/07/10-->(2)馬公475番地",
+                "startP": "馬公414番地",
+                "endP": "馬公475番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5657282593,
+                        23.5648765336
+                    ],
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "伊藤",
+                "owner": "伊藤長治_2",
+                "label": "(2)馬公475番地--1923/06/23-->(3)馬公414番地",
+                "startP": "馬公475番地",
+                "endP": "馬公414番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "德山&高橋",
+                "owner": "德山キヲ",
+                "label": "(1)宮內町--1903/10/05-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "德山&高橋",
+                "owner": "德山キヲ",
+                "label": "(2)南町--1906/11/13-->(3)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "德山&高橋",
+                "owner": "高橋清廉",
+                "label": "(1)南町--1907/07/18-->(2)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652078428,
+                        23.5651647393
+                    ],
+                    [
+                        119.5704002178,
+                        23.5688837704
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "岩本",
+                "owner": "岩本定清",
+                "label": "(1)馬公494番地--1922/03/02-->(2)馬公72-1番地",
+                "startP": "馬公494番地",
+                "endP": "馬公72-1番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "藤井",
+                "owner": "藤井ツル",
+                "label": "(1)宮內町--1908/01/27-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "藤井",
+                "owner": "藤井ヨシ",
+                "label": "(1)宮內町--1907/07/22-->(2)埔仔尾",
+                "startP": "宮內町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "山田",
+                "owner": "山田政吉",
+                "label": "(1)宮內町--1907/06/01-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "山田",
+                "owner": "山田政吉",
+                "label": "(2)南町--1908/08/08-->(3)西町",
+                "startP": "南町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "東西",
+                "owner": "東西カイ",
+                "label": "(1)東町--1907/07/30-->(2)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "東西",
+                "owner": "東西カイ",
+                "label": "(2)南町--1907/09/03-->(3)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "東西",
+                "owner": "東西カイ",
+                "label": "(3)埔仔尾--時間不詳-->(4)埔仔尾",
+                "startP": "埔仔尾",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5704527541,
+                        23.56850497
+                    ],
+                    [
+                        119.5646281848,
+                        23.5670484159
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "東西",
+                "owner": "東西カイ",
+                "label": "(5)馬公78番地--1920/07/01-->(6)馬公545番地",
+                "startP": "馬公78番地",
+                "endP": "馬公545番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "佐藤",
+                "owner": "佐藤志馬一",
+                "label": "(1)東町--1906/10/23-->(2)宮內町",
+                "startP": "東町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "佐藤",
+                "owner": "佐藤志馬一",
+                "label": "(2)宮內町--1907/07/25-->(3)西町",
+                "startP": "宮內町",
+                "endP": "西町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "佐藤",
+                "owner": "佐藤志馬一",
+                "label": "(3)西町--1907/10/24-->(4)南町",
+                "startP": "西町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5636980996,
+                        23.5640454954
+                    ],
+                    [
+                        119.563650846,
+                        23.5636741222
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "label": "(1)馬公302番地--1931/12/02-->(2)馬公291番地",
+                "startP": "馬公302番地",
+                "endP": "馬公291番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563650846,
+                        23.5636741222
+                    ],
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "label": "(2)馬公291番地--1939/03/05-->(3)馬公414番地",
+                "startP": "馬公291番地",
+                "endP": "馬公414番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5650612152,
+                        23.5642144582
+                    ],
+                    [
+                        119.5652599503,
+                        23.5659210462
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "脇",
+                "owner": "脇三五郎",
+                "label": "(3)馬公414番地--1945/02/26-->(4)馬公505番地",
+                "startP": "馬公414番地",
+                "endP": "馬公505番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_1",
+                "label": "(1)宮內町--1906/12/04-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_1",
+                "label": "(2)南町--1907/03/02-->(3)宮內町",
+                "startP": "南町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_1",
+                "label": "(3)宮內町--1908/09/15-->(4)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_1",
+                "label": "(5)南町--1913/10/25-->(7)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.56369878,
+                        23.5638971028
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_1",
+                "label": "(8)馬公298番地--1925/05/20-->(9)馬公86番地",
+                "startP": "馬公298番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.56369878,
+                        23.5638971028
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_2",
+                "label": "(1)馬公298番地--1923/08/01-->(2)馬公86番地",
+                "startP": "馬公298番地",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ],
+                    [
+                        119.5641473028,
+                        23.5656957328
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "樋口",
+                "owner": "樋口長吉_2",
+                "label": "(2)馬公86番地--1945/12/28-->(3)馬公621番地",
+                "startP": "馬公86番地",
+                "endP": "馬公621番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(1)南町--1918/10/23-->(2)馬公623番地",
+                "startP": "南町",
+                "endP": "馬公623番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ],
+                    [
+                        119.5642680229,
+                        23.5653691264
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(2)馬公623番地--1919/03/07-->(3)馬公622番地",
+                "startP": "馬公623番地",
+                "endP": "馬公622番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642680229,
+                        23.5653691264
+                    ],
+                    [
+                        119.5650160454,
+                        23.5632740359
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(3)馬公622番地--1919/04/19-->(4)馬公288番地",
+                "startP": "馬公622番地",
+                "endP": "馬公288番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5650160454,
+                        23.5632740359
+                    ],
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(4)馬公288番地--1919/09/01-->(5)馬公623番地",
+                "startP": "馬公288番地",
+                "endP": "馬公623番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ],
+                    [
+                        119.5701948496,
+                        23.5689188219
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(5)馬公623番地--1920/04/25-->(7)馬公55番地",
+                "startP": "馬公623番地",
+                "endP": "馬公55番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5701948496,
+                        23.5689188219
+                    ],
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(7)馬公55番地--1920/08/12-->(7)馬公623番地",
+                "startP": "馬公55番地",
+                "endP": "馬公623番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ],
+                    [
+                        119.564700282,
+                        23.5647103805
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(7)馬公623番地--1920/09/22-->(8)馬公695番地",
+                "startP": "馬公623番地",
+                "endP": "馬公695番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.564700282,
+                        23.5647103805
+                    ],
+                    [
+                        119.5702719883,
+                        23.5688633298
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(8)馬公695番地--1921/05/08-->(9)馬公72番地",
+                "startP": "馬公695番地",
+                "endP": "馬公72番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5702719883,
+                        23.5688633298
+                    ],
+                    [
+                        119.5707848273,
+                        23.5687172337
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "神山&外間",
+                "owner": "神山庸友",
+                "label": "(9)馬公72番地--1922/02/16-->(10)馬公76番地",
+                "startP": "馬公72番地",
+                "endP": "馬公76番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "溝內",
+                "owner": "溝內畢",
+                "label": "(1)東町--1916/11/27-->(2)東町",
+                "startP": "東町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5651511904,
+                        23.5651311007
+                    ],
+                    [
+                        119.5651052642,
+                        23.5651436447
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "溝內",
+                "owner": "溝內畢",
+                "label": "(3)馬公495番地--1926/12/22-->(4)馬公496番地",
+                "startP": "馬公495番地",
+                "endP": "馬公496番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(1)北町--1904/12/03-->(2)北町",
+                "startP": "北町",
+                "endP": "北町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(3)宮內町--1914/03/03-->(4)東町",
+                "startP": "宮內町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5632020163,
+                        23.5642080277
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(4)東町--1914/10/15-->(5)馬公738番地",
+                "startP": "東町",
+                "endP": "馬公738番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5632020163,
+                        23.5642080277
+                    ],
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(5)馬公738番地--1919/06/28-->(6)馬公623番地",
+                "startP": "馬公738番地",
+                "endP": "馬公623番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5641282607,
+                        23.5653897831
+                    ],
+                    [
+                        119.5642123291,
+                        23.5648359041
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(6)馬公623番地--1920/09/01-->(7)馬公675番地",
+                "startP": "馬公623番地",
+                "endP": "馬公675番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642123291,
+                        23.5648359041
+                    ],
+                    [
+                        119.5657282593,
+                        23.5648765336
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築忠平",
+                "label": "(7)馬公675番地--1920/10/01-->(8)馬公475番地",
+                "startP": "馬公675番地",
+                "endP": "馬公475番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築シゲ",
+                "label": "(1)北町--1908/11/01-->(2)宮內町",
+                "startP": "北町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "都築",
+                "owner": "都築シゲ",
+                "label": "(2)宮內町--1912/06/15-->(3)東町",
+                "startP": "宮內町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "松浦",
+                "owner": "松浦三五郎",
+                "label": "(1)宮內町--1904/12/19-->(2)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "村井",
+                "owner": "村井マツ",
+                "label": "(1)宮內町--1908/09/17-->(2)東町",
+                "startP": "宮內町",
+                "endP": "東町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "村井",
+                "owner": "村井マツ",
+                "label": "(2)東町--1911/02/18-->(3)南町",
+                "startP": "東町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "大渡",
+                "owner": "大渡又次郎",
+                "label": "(1)北町--1907/03/11-->(2)南町",
+                "startP": "北町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "大渡",
+                "owner": "大渡又次郎",
+                "label": "(2)南町--1908/03/31-->(3)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.563798906,
+                        23.5664468659
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "大渡",
+                "owner": "大渡又次郎",
+                "label": "(3)埔仔尾--1908/04/14-->(6)馬公629番地",
+                "startP": "埔仔尾",
+                "endP": "馬公629番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.563798906,
+                        23.5664468659
+                    ],
+                    [
+                        119.5685806718,
+                        23.5673993276
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "大渡",
+                "owner": "大渡又次郎",
+                "label": "(6)馬公629番地--時間不詳-->(7)馬公95番地",
+                "startP": "馬公629番地",
+                "endP": "馬公95番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中村&桑田",
+                "owner": "中村サキ",
+                "label": "(1)西町--1906/09/17-->(2)南町",
+                "startP": "西町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中村&桑田",
+                "owner": "中村サキ",
+                "label": "(2)南町--1908/07/24-->(3)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中村&桑田",
+                "owner": "中村サキ",
+                "label": "(3)埔仔尾--1908/09/16-->(4)宮內町",
+                "startP": "埔仔尾",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中村&桑田",
+                "owner": "中村サキ",
+                "label": "(4)宮內町--1912/01/23-->(5)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中村&桑田",
+                "owner": "桑田秀松",
+                "label": "(1)宮內町--1912/01/23-->(2)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中野",
+                "owner": "中野夘三郎",
+                "label": "(1)宮內町--1905/02/02-->(2)宮內町",
+                "startP": "宮內町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5665023136,
+                        23.5648269182
+                    ],
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中野",
+                "owner": "中野夘三郎",
+                "label": "(3)東町--1915/09/22-->(4)北町",
+                "startP": "東町",
+                "endP": "北町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5672523641,
+                        23.5662612521
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "中野",
+                "owner": "中野夘三郎",
+                "label": "(4)北町--1916/11/30-->(5)埔仔尾",
+                "startP": "北町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5658920638,
+                        23.5632288327
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "門田",
+                "owner": "門田重吉",
+                "label": "(1)築地町--1913/05/02-->(2)埔仔尾",
+                "startP": "築地町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5692335189,
+                        23.5681620417
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "門田",
+                "owner": "門田重吉",
+                "label": "(2)埔仔尾--1920/10/01-->(3)馬公86番地",
+                "startP": "埔仔尾",
+                "endP": "馬公86番地"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "野村",
+                "owner": "野村捨之助",
+                "label": "(1)西町--1904/03/01-->(2)南町",
+                "startP": "西町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "兒玉",
+                "owner": "兒玉傳十",
+                "label": "(1)西町--1905/07/27-->(2)宮內町",
+                "startP": "西町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5645071077,
+                        23.5665456026
+                    ],
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_1",
+                "label": "(1)西町--1905/07/30-->(2)宮內町",
+                "startP": "西町",
+                "endP": "宮內町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5652425407,
+                        23.5646860876
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_1",
+                "label": "(2)宮內町--1905/12/26-->(3)南町",
+                "startP": "宮內町",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_1",
+                "label": "(3)南町--1913/05/18-->(4)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_2",
+                "label": "(1)南町--1911/10/30-->(2)埔仔尾",
+                "startP": "南町",
+                "endP": "埔仔尾"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5691771075,
+                        23.568131085
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_2",
+                "label": "(2)埔仔尾--1915/04/29-->(3)南町",
+                "startP": "埔仔尾",
+                "endP": "南町"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ],
+                    [
+                        119.5642780072,
+                        23.5643114954
+                    ]
+                ]
+            },
+            "properties": {
+                "family_system": "國吉",
+                "owner": "國吉善裕_2",
+                "label": "(3)南町--1915/09/12-->(4)南町",
+                "startP": "南町",
+                "endP": "南町"
+            }
+        }
+    ]
+}
